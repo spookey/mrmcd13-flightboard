@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>up next</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="jquery.flightboard.min.js"></script>
+    <script type="text/javascript">
+    mylettersSize = [25, 34];
+    myspeed = 250;
+    mypause = 3500;
+    mylettersSeq =  ' ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    mylettersImage = 'flightBoardSourceCodePro.png';
+    myshadingImages = ['flightBoardHigh.png', 'flightBoardShad.png'];
+    myflips = [5, 15];
+
+    $(function () {
+        $('#time').flightboard(
+            {
+                messages: ['   23 01'],
+                lettersSeq: mylettersSeq,
+                maxLength: 8,
+                lettersSize: mylettersSize,
+                speed: myspeed,
+                pause: mypause,
+                flips: myflips,
+                lettersImage: mylettersImage,
+                myshadingImages: myshadingImages
+            }
+        );
+    });
+
+    $(function () {
+        $('#depature').flightboard(
+            {
+                messages: ['BIERTRINKEN GEGEN DEN KRIEG', 'PRAKTIZIERTER PAZIFISMUS'],
+                lettersSeq: mylettersSeq,
+                maxLength: 20,
+                lettersSize: mylettersSize,
+                speed: myspeed,
+                pause: 3000,
+                flips: myflips,
+                lettersImage: mylettersImage,
+                myshadingImages: myshadingImages
+            }
+        );
+    });
+
+
+    $(function () {
+        $('#flight').flightboard(
+            {
+                messages: ['2342'],
+                lettersSeq: mylettersSeq,
+                maxLength: 4,
+                lettersSize: mylettersSize,
+                speed: myspeed,
+                pause: mypause,
+                flips: myflips,
+                lettersImage: mylettersImage,
+                myshadingImages: myshadingImages
+            }
+        );
+    });
+
+
+    $(function () {
+        $('#gate').flightboard(
+            {
+                messages: ['SAAL 23'],
+                lettersSeq: mylettersSeq,
+                maxLength: 8,
+                lettersSize: mylettersSize,
+                speed: myspeed,
+                pause: mypause,
+                flips: myflips,
+                lettersImage: mylettersImage,
+                myshadingImages: myshadingImages
+            }
+        );
+    });
+
+    $(function () {
+        $('#test').flightboard(
+            {
+                messages: ['HALLO WELT'],
+                lettersSeq: mylettersSeq,
+                maxLength: 10,
+                lettersSize: mylettersSize,
+                speed: myspeed,
+                pause: mypause,
+                flips: myflips,
+                lettersImage: mylettersImage,
+                myshadingImages: myshadingImages
+            }
+        );
+    });
+
+    </script>
+</head>
+<body>
+        <div class="rows">
+            <div class="rowelement" id="time" class="firstrowelement"></div>
+            <div class="rowelement" id="gate"></div>
+            <div class="rowelement" id="flight"></div>
+            <div class="rowelement" id="depature" class="lastrowelement"></div>
+        </div>
+        <div class="rows">
+            <div class="rowelement" id="test"></div>
+        </div>
+
+</body>
+</html>

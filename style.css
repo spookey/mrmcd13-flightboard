@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: #ffffff;
+    color: #000000;
+    font-family: "Source Code Pro", "Monaco", sans-serif;
+}
+
+.rows{
+    height: 36px;
+    background: #123456;
+    font-size: 27px;
+    clear: both;
+}
+
+.rows .rowelement{
+    float: left;
+    margin: 0 27px 0 0;
+}
+
+
