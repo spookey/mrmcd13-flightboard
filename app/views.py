@@ -1,6 +1,7 @@
 # -.- coding: utf-8 -.-
 
-from flask import render_template, flash
+from flask import render_template, send_from_directory, flash
+from config import dir_static
 from app import app
 
 @app.route('/')
@@ -9,6 +10,12 @@ def index():
     return render_template('main.html',
         title = 'Up Next',
         inhalt = 'Hallo Welt',
+    )
+
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(dir_static, 'favicon.png',
+        mimetype='image/png'
     )
 
 @app.errorhandler(404)
