@@ -21,4 +21,9 @@ body{
     margin: 0 27px 0 0;
 }
 
-
+#clock {
+    font-size: 112px;
+    vertical-align: top;
+    float: right;
+    margin-right: 5px;
+}
