@@ -1,7 +1,109 @@
 {% extends 'base.html' %}
 {% block content %}
+    <script type="text/javascript">
+    mylettersSize = [25, 34];
+    myspeed = 250;
+    mypause = 3500;
+    mylettersSeq =  ' ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    mylettersImage = 'static/img/flightBoardSourceCodePro.png';
+    myshadingImages = ['static/img/flightBoardHigh.png', 'static/img/flightBoardShad.png'];
+    myflips = [5, 15];
 
-<p>Hallo Welt</p>
-{% if inhalt %}<p>{{ meldung }}</p>{% endif %}
+    $(function () {
+        $('#time').flightboard(
+            {
+                messages: ['   23 01'],
+                lettersSeq: mylettersSeq,
+                maxLength: 8,
+                lettersSize: mylettersSize,
+                speed: myspeed,
+                pause: mypause,
+                flips: myflips,
+                lettersImage: mylettersImage,
+                myshadingImages: myshadingImages
+            }
+        );
+    });
+
+    $(function () {
+        $('#depature').flightboard(
+            {
+                messages: ['BIERTRINKEN GEGEN DEN KRIEG', 'PRAKTIZIERTER PAZIFISMUS'],
+                lettersSeq: mylettersSeq,
+                maxLength: 20,
+                lettersSize: mylettersSize,
+                speed: myspeed,
+                pause: 3000,
+                flips: myflips,
+                lettersImage: mylettersImage,
+                myshadingImages: myshadingImages
+            }
+        );
+    });
+
+
+    $(function () {
+        $('#flight').flightboard(
+            {
+                messages: ['2342'],
+                lettersSeq: mylettersSeq,
+                maxLength: 4,
+                lettersSize: mylettersSize,
+                speed: myspeed,
+                pause: mypause,
+                flips: myflips,
+                lettersImage: mylettersImage,
+                myshadingImages: myshadingImages
+            }
+        );
+    });
+
+
+    $(function () {
+        $('#gate').flightboard(
+            {
+                messages: ['SAAL 23'],
+                lettersSeq: mylettersSeq,
+                maxLength: 8,
+                lettersSize: mylettersSize,
+                speed: myspeed,
+                pause: mypause,
+                flips: myflips,
+                lettersImage: mylettersImage,
+                myshadingImages: myshadingImages
+            }
+        );
+    });
+    
+    $(function() {
+        var clock = $("#clock");
+        var interval = setInterval(function () {
+            var time = new Date();
+            var hours = time.getHours();
+            var minutes = time.getMinutes();
+            if (hours < 10) {
+                hours = '0' + hours;
+            }
+            if (minutes < 10) {
+                minutes = '0' + minutes;
+            }
+            $("#clock").text(hours + ':' + minutes);
+        }, 100);
+    });
+    </script>
+    
+    <header>
+        <img src="static/img/mrmcd13_logo.png">
+        <span id="clock">23:42</span>
+    </header>
+    <div class="rows">
+        <div class="rowelement" id="time" class="firstrowelement"></div>
+        <div class="rowelement" id="gate"></div>
+        <div class="rowelement" id="flight"></div>
+        <div class="rowelement" id="depature" class="lastrowelement"></div>
+    </div>
+    <footer>
+        MRMCD 2013 | FLightboard &copy; Eris Diskordia | CCCMZ.
+    </footer>
 
 {% endblock %}
