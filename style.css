@@ -27,3 +27,12 @@ body{
     float: right;
     margin-right: 5px;
 }
+
+footer {
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
