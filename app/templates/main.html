@@ -74,7 +74,25 @@
             }
         );
     });
-    
+
+
+    $(function () {
+        $('#test').flightboard(
+            {
+                messages: ['Test 123'],
+                lettersSeq: mylettersSeq,
+                maxLength: 8,
+                lettersSize: mylettersSize,
+                speed: myspeed,
+                pause: mypause,
+                flips: myflips,
+                lettersImage: mylettersImage,
+                myshadingImages: myshadingImages
+            }
+        );
+    });
+
+
     $(function() {
         var clock = $("#clock");
         var interval = setInterval(function () {
@@ -96,12 +114,27 @@
         <img src="static/img/mrmcd13_logo.png">
         <span id="clock">23:42</span>
     </header>
-    <div class="rows">
-        <div class="rowelement" id="time" class="firstrowelement"></div>
-        <div class="rowelement" id="gate"></div>
-        <div class="rowelement" id="flight"></div>
-        <div class="rowelement" id="depature" class="lastrowelement"></div>
-    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Destination</th>
+                <th>Flight</th>
+                <th>Gate</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="rowelement" id="time"></td>
+                <td class="rowelement" id="gate"></td>
+                <td class="rowelement" id="flight"></td>
+                <td class="rowelement" id="depature"></td>
+            </tr>
+            <tr>
+                <td class="rowelement" id="test"></td>
+            </tr>
+        </tbody>
+    </table>
     <footer>
         MRMCD 2013 | FLightboard &copy; Eris Diskordia | CCCMZ.
     </footer>
