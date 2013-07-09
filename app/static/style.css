@@ -1,3 +1,28 @@
+@font-face {
+    font-family: 'mingray_mono_regular';
+    src: url('mingraymono-regular.eot');
+    src: url('mingraymono-regular.eot?#iefix') format('embedded-opentype'),
+         url('mingraymono-regular.woff') format('woff'),
+         url('mingraymono-regular.ttf') format('truetype'),
+         url('mingraymono-regular.svg#mingray_monoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'mingray_mono_light';
+    src: url('mingraymono-light.eot');
+    src: url('mingraymono-light.eot?#iefix') format('embedded-opentype'),
+         url('mingraymono-light.woff') format('woff'),
+         url('mingraymono-light.ttf') format('truetype'),
+         url('mingraymono-light.svg#mingray_monolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 *{
     padding: 0;
     margin: 0;
@@ -6,7 +31,7 @@
 body{
     background: #ffffff;
     color: #000000;
-    font-family: "Source Code Pro", "Monaco", sans-serif;
+    font-family: 'mingray_mono_regular', 'Consolas', 'Monaco', sans-serif;
 }
 
 table {
