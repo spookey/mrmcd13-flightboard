@@ -15,18 +15,19 @@ def index():
 def content():
     d = {
         'defaults': {
-            'lettersSeq': ' ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789',
+            'lettersSeq': ' ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_.:,;#+~*?!(){}[]/\&%|<>',
             'lettersSize': [25, 34],
-            'lettersImage': 'static/img/flightBoardSourceCodePro.png',
+            'lettersImage': 'static/img/flightBoardMingrayMonoRegular.png',
             'shadingImages': ['static/img/flightBoardHigh.png', 'static/img/flightBoardShad.png'],
-            'flips': [3, 7],
-            'speed': 250,
-            'pause': 5000,
-            'messages': ['VOID', 'NULL', 'FALSE']
+            # 'flips': [3, 7],
+            'speed': 50,
+            'pause': 10000,
+            'messages': ['void', 'null', 'false'],
+            'sequential': True
         },
         'test': {
             'maxLength': 8,
-            'messages': ['WALD', 'MEISTER'],
+            'messages': ['WALD', 'MEISTER', 'LEBER', 'WURST'],
         },
     }
     return jsonify(d)
