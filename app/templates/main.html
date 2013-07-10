@@ -1,142 +1,70 @@
 {% extends 'base.html' %}
 {% block content %}
-    <script type="text/javascript">
-    mylettersSize = [25, 34];
-    myspeed = 250;
-    mypause = 3500;
-    mylettersSeq =  ' ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-    mylettersImage = 'static/img/flightBoardSourceCodePro.png';
-    myshadingImages = ['static/img/flightBoardHigh.png', 'static/img/flightBoardShad.png'];
-    myflips = [5, 15];
+<script type="text/javascript">
 
-    $(function () {
-        $('#time').flightboard(
-            {
-                messages: ['   23 01'],
-                lettersSeq: mylettersSeq,
-                maxLength: 8,
-                lettersSize: mylettersSize,
-                speed: myspeed,
-                pause: mypause,
-                flips: myflips,
-                lettersImage: mylettersImage,
-                myshadingImages: myshadingImages
-            }
-        );
+function getjson(element) {
+    var result = null;
+    $.ajax({
+        'async': false,
+        'global': false,
+        'url': '{{ url_for('content') }}',
+        'dataType': 'json',
+        'success': function(data){ result = data; }
     });
+    return result[element];
+};
 
-    $(function () {
-        $('#depature').flightboard(
-            {
-                messages: ['BIERTRINKEN GEGEN DEN KRIEG', 'PRAKTIZIERTER PAZIFISMUS'],
-                lettersSeq: mylettersSeq,
-                maxLength: 20,
-                lettersSize: mylettersSize,
-                speed: myspeed,
-                pause: 3000,
-                flips: myflips,
-                lettersImage: mylettersImage,
-                myshadingImages: myshadingImages
-            }
-        );
-    });
+$.flightboard.setDefaults( getjson('defaults') );
 
+$(function () { $('#time').flightboard(
+    {
+        messages: ['   23 42'],
+        maxLength: 8,
+    }); });
 
-    $(function () {
-        $('#flight').flightboard(
-            {
-                messages: ['2342'],
-                lettersSeq: mylettersSeq,
-                maxLength: 4,
-                lettersSize: mylettersSize,
-                speed: myspeed,
-                pause: mypause,
-                flips: myflips,
-                lettersImage: mylettersImage,
-                myshadingImages: myshadingImages
-            }
-        );
-    });
+$(function () { $('#depature').flightboard(
+    {
+        messages: ['BIERTRINKEN GEGEN DEN KRIEG', 'PRAKTIZIERTER PAZIFISMUS'],
+        maxLength: 30,
+    }); });
+
+$(function () { $('#flight').flightboard(
+    {
+        messages: ['2342'],
+        maxLength: 4,
+    }); });
 
 
-    $(function () {
-        $('#gate').flightboard(
-            {
-                messages: ['SAAL 23'],
-                lettersSeq: mylettersSeq,
-                maxLength: 8,
-                lettersSize: mylettersSize,
-                speed: myspeed,
-                pause: mypause,
-                flips: myflips,
-                lettersImage: mylettersImage,
-                myshadingImages: myshadingImages
-            }
-        );
-    });
+$(function () { $('#gate').flightboard(
+    {
+        messages: ['SAAL 23'],
+        maxLength: 8,
+    }); });
 
+$(function () { $('#test').flightboard( getjson('test') ); });
+setInterval(function(){$('#test').flightboard(getjson('test') ); }, 10000);
 
-    $(function () {
-        $('#test').flightboard(
-            {
-                messages: ['TEST 123'],
-                lettersSeq: mylettersSeq,
-                maxLength: 8,
-                lettersSize: mylettersSize,
-                speed: myspeed,
-                pause: mypause,
-                flips: myflips,
-                lettersImage: mylettersImage,
-                myshadingImages: myshadingImages
-            }
-        );
-    });
+</script>
 
+<table>
+    <thead>
+        <tr>
+            <th>Time</th>
+            <th>Gate</th>
+            <th>Flight</th>
+            <th>Departure</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="rowelement" id="time"></td>
+            <td class="rowelement" id="gate"></td>
+            <td class="rowelement" id="flight"></td>
+            <td class="rowelement" id="depature"></td>
+        </tr>
+    </tbody>
+</table>
 
-    $(function() {
-        var clock = $("#clock");
-        var interval = setInterval(function () {
-            var time = new Date();
-            var hours = time.getHours();
-            var minutes = time.getMinutes();
-            if (hours < 10) {
-                hours = '0' + hours;
-            }
-            if (minutes < 10) {
-                minutes = '0' + minutes;
-            }
-            $("#clock").text(hours + ':' + minutes);
-        }, 100);
-    });
-    </script>
-    
-    <header>
-        <img src="static/img/mrmcd13_logo.png" alt="Papierflieger MRMCD2013 SECURITY ADVICE">
-        <span id="clock">23:42</span>
-    </header>
-    <table>
-        <thead>
-            <tr>
-                <th>Time</th>
-                <th>Destination</th>
-                <th>Flight</th>
-                <th>Gate</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="rowelement" id="time"></td>
-                <td class="rowelement" id="gate"></td>
-                <td class="rowelement" id="flight"></td>
-                <td class="rowelement" id="depature"></td>
-            </tr>
-            <tr>
-                <td class="rowelement" id="test"></td>
-            </tr>
-        </tbody>
-    </table>
-    <footer>
-        MRMCD 2013 | FLightboard &copy; Eris Diskordia | CCCMZ.
-    </footer>
+<div class="rowelement" id="test"></div>
 
 {% endblock %}
