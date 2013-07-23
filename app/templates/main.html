@@ -16,33 +16,20 @@ function getjson(element) {
 
 $.flightboard.setDefaults( getjson('defaults') );
 
-$(function () { $('#time').flightboard(
-    {
-        messages: ['   23 42'],
-        maxLength: 8,
-    }); });
+$(function () { $('#time').flightboard( getjson('time') ); });
+setInterval(function(){$('#time').flightboard( getjson('time') ); }, 60000);
 
-$(function () { $('#depature').flightboard(
-    {
-        messages: ['BIERTRINKEN GEGEN DEN KRIEG', 'PRAKTIZIERTER PAZIFISMUS'],
-        maxLength: 30,
-    }); });
+$(function () { $('#depature').flightboard( getjson('depature') ); });
+setInterval(function(){$('#depature').flightboard( getjson('depature') ); }, 60000);
 
-$(function () { $('#flight').flightboard(
-    {
-        messages: ['2342'],
-        maxLength: 4,
-    }); });
+$(function () { $('#flight').flightboard( getjson('flight') ); });
+setInterval(function(){$('#flight').flightboard( getjson('flight') ); }, 60000);
 
-
-$(function () { $('#gate').flightboard(
-    {
-        messages: ['SAAL 23'],
-        maxLength: 8,
-    }); });
+$(function () { $('#gate').flightboard( getjson('gate') ); });
+setInterval(function(){$('#gate').flightboard( getjson('gate') ); }, 60000);
 
 $(function () { $('#test').flightboard(  ); });
-setInterval(function(){$('#test').flightboard(getjson('test') ); }, 60000);
+setInterval(function(){$('#test').flightboard( getjson('test') ); }, 60000);
 
 </script>
 
@@ -65,6 +52,6 @@ setInterval(function(){$('#test').flightboard(getjson('test') ); }, 60000);
     </tbody>
 </table>
 
-<div class="rowelement" id="test"></div>
+<!-- <div class="rowelement" id="test"></div> -->
 
 {% endblock %}
