@@ -49,7 +49,7 @@ globald = {
 @app.route('/test')
 def test():
     return render_template('test.html',
-        content = get_frab_feed()
+        content = schedule(),
         )
 
 @app.route('/content.json')

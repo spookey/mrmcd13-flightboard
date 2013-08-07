@@ -1,43 +1,40 @@
 # -.- coding: utf-8 -.-
 
-import cookielib
-import urllib2
+import os, json, time
 from config import *
+from datetime import datetime, timedelta
 
-def get_frab_feed():
-    base_url = 'https://frab.cccv.de'
-    login_action = '/en/session?conference_acronym=MRMCD2013'
-    feed_url = 'https://frab.cccv.de/en/MRMCD2013/public/schedule.json'
+def mk_datetime(Ymd):
+    return datetime.strptime(Ymd, '%Y-%m-%d')
 
-    cookie_file = 'my.cookie'
-    cookiejar = cookielib.MozillaCookieJar(cookie_file)
+def load_json():
+    if os.path.exists(frab_feed):
+        with open(frab_feed, 'r') as f:
+            try:
+                content = json.loads(f.read())
+            except (Exception, ValueError) as e:
+                print 'error parsing file'
+            else:
+                return content
 
-    opener = urllib2.build_opener(
-        urllib2.HTTPRedirectHandler(),
-        urllib2.HTTPHandler(debuglevel=0),
-        urllib2.HTTPSHandler(debuglevel=0),
-        urllib2.HTTPCookieProcessor(cookiejar)
-        )
+def schedule():
 
-    opener.addheaders = [('User-agent',
-       ('Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_7) '
-         'AppleWebKit/535.1 (KHTML, like Gecko) '
-         'Chrome/13.0.782.13 Safari/535.1'))
-    ]
+    content = load_json()
+    result = []
 
-    response = opener.open(base_url)
-    cookiejar.save()
+    result.append(datetime.now())
+    result.append('|||')
 
-    login_data = {
-        'user_email': 'notify@der-beweis.de',
-        'user_password': 'pay-wrek-ib-ja-quag-fel',
-    }
+    for d in content['schedule']['conference']['days']:
+        result.append(str(d['date']))
+        result.append(mk_datetime(d['date']))
+        result.append('-->')
+        result.append(mk_datetime(d['date']) - datetime.now())
+        result.append(str(mk_datetime(d['date']) - datetime.now()))
+        result.append('//')
 
-    login_url = base_url + login_action
-    response = opener.open(login_url, login_data)
+    result.append('-' * 23)
+    isitconferencenow = (mk_datetime(content['schedule']['conference']['starttest']) <= datetime.now() <= mk_datetime(content['schedule']['conference']['endtest']))
+    result.append('Today is conference? %s' %(isitconferencenow))
 
-    cookiejar.save()
-
-    response = opener.open(feed_url)
-
-    return unicode(response.read(), 'utf-8')
+    return result

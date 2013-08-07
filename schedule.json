@@ -1,0 +1,49 @@
+{ "schedule": {
+    "version": "0",
+    "conference": {
+      "title": "MRMCD2013",
+      "start": "2013-09-06",
+      "end": "2013-09-08",
+      "days": "3",
+      "timeslot_duration": "00:10",
+      "days": [
+          {
+            "index": "0",
+            "date": "2013-09-06",
+            "rooms": {
+              "Gate 104": [
+              ],
+              "Gate 204": [
+              ],
+              "Gate 105 (Workshop Airlines)": [
+              ]
+            }
+          },
+          {
+            "index": "1",
+            "date": "2013-09-07",
+            "rooms": {
+              "Gate 104": [
+              ],
+              "Gate 204": [
+              ],
+              "Gate 105 (Workshop Airlines)": [
+              ]
+            }
+          },
+          {
+            "index": "2",
+            "date": "2013-09-08",
+            "rooms": {
+              "Gate 104": [
+              ],
+              "Gate 204": [
+              ],
+              "Gate 105 (Workshop Airlines)": [
+              ]
+            }
+          }
+      ]
+    }
+  }
+}
