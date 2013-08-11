@@ -5,11 +5,16 @@ from config import dir_static
 from service import *
 from app import app
 
+servicefunctions = {
+            'todayisday': todayisday(),
+        }
+
 @app.route('/')
 @app.route('/index')
 def index():
     return render_template('main.html',
         title = 'Up Next',
+        servicefunctions = servicefunctions,
     )
 
 globald = {
@@ -40,10 +45,6 @@ globald = {
             'messages': ['Saal 23', '5. Stock'],
             'maxLength': 8,
         },
-        'test': {
-            'messages': ['WALD', 'MEISTER', 'LEBER', 'WURST'],
-            'maxLength': 8,
-        },
 }
 
 @app.route('/test')
@@ -66,8 +67,10 @@ def favicon():
 @app.errorhandler(404)
 def internal_error(error):
     flash('I checked twice!')
-    return render_template('404.html'), 404
+    return render_template('error.html',
+        message = 'File not found'), 404
 
 @app.errorhandler(500)
 def internal_error(error):
-    return render_template('500.html'), 500
+    return render_template('error.html',
+        message = 'An unexpected error has occurred'), 500

@@ -30,7 +30,13 @@
 <body>
     <header>
         <img src="static/img/mrmcd13_logo.png" alt="Papierflieger MRMCD2013 SECURITY ADVICE">
-        <span id="clock">23:42</span>
+        <div id="timebox">
+            <span id="clock">23:42</span>
+            {% if servicefunctions is defined %}
+                <div id="day" title="{{ servicefunctions.todayisday[0] }}">{{ servicefunctions.todayisday[0] }} Day: {{ servicefunctions.todayisday[1] }}</div>
+            {% endif %}
+        </div>
+
         {% with messages = get_flashed_messages() %}
                 {% if messages %}
         <div id="message">

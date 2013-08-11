@@ -33,11 +33,19 @@ body {
     font-family: 'mingray_mono_light', 'Consolas', 'Monaco', sans-serif;
 }
 
-#clock {
-    font-size: 112px;
+#timebox {
     vertical-align: top;
     float: right;
-    margin-right: 5px;
+    /*margin-right: 5px;*/
+    margin: 5px;
+}
+
+#clock {
+    font-size: 100px;
+}
+
+#day {
+    text-align: right;
 }
 
 #message {
@@ -52,6 +60,7 @@ body {
 }
 
 table {
+    clear: both;
     border-collapse: collapse;
     padding: 0;
     margin: 0 0 0 5px;
