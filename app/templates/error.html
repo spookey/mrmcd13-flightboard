@@ -2,7 +2,8 @@
 
 {% block content %}
 <div id="error">
-    <h1>An unexpected error has occurred</h1>
+    <h1>Error</h1>
+    {% if message is defined %}<p>{{ message }}</p>{% endif %}
     <a href="{{url_for('index')}}">Home</a>
 </div>
 {% endblock %}

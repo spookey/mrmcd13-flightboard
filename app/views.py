@@ -66,8 +66,10 @@ def favicon():
 @app.errorhandler(404)
 def internal_error(error):
     flash('I checked twice!')
-    return render_template('404.html'), 404
+    return render_template('error.html',
+        message = 'File not found'), 404
 
 @app.errorhandler(500)
 def internal_error(error):
-    return render_template('500.html'), 500
+    return render_template('error.html',
+        message = 'An unexpected error has occurred'), 500
