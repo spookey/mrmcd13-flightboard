@@ -36,7 +36,6 @@ body {
 #timebox {
     vertical-align: top;
     float: right;
-    /*margin-right: 5px;*/
     margin: 5px;
 }
 
@@ -45,7 +44,7 @@ body {
 }
 
 #day {
-    text-align: right;
+    text-align: center;
 }
 
 #message {
@@ -73,7 +72,7 @@ table {
 footer {
     background-color: black;
     color: white;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;

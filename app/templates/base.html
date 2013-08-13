@@ -32,8 +32,8 @@
         <img src="static/img/mrmcd13_logo.png" alt="Papierflieger MRMCD2013 SECURITY ADVICE">
         <div id="timebox">
             <span id="clock">23:42</span>
-            {% if servicefunctions is defined %}
-                <div id="day" title="{{ servicefunctions.todayisday[0] }}">{{ servicefunctions.todayisday[0] }} Day: {{ servicefunctions.todayisday[1] }}</div>
+            {% if servicefunctions is defined and servicefunctions.get_day_number is not none %}
+                <div id="day" title="{{ servicefunctions.get_day_number[1] }}">Day: {{ servicefunctions.get_day_number[0] }} &mdash; {{ servicefunctions.get_day_number[1] }}</div>
             {% endif %}
         </div>
 

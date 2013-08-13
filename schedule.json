@@ -131,7 +131,7 @@ Einen kleinen Ausblick auf die Inhalte gibt es bereits im RaumZeitLabor Blog (si
                         {"id": "3878",  "full_public_name": "muzy"}
                     ],
                     "links": [
-                        {"url": "http://hacklace.org", "title": "Hacklace Website"}
+                        {"url": "http://hacklace.org", "title": "Hacklace Website"},
                         {"url": "https://raumzeitlabor.de/blog/wie-man-einen-bausatz-bastelt/", "title": "Wie man einen Bausatz bastelt"}
                     ]
                   }
@@ -192,7 +192,7 @@ vortragen durfte ich schon in einigen hackerspaces, bei den letzten mrmcd war ic
                     "start": "13:23",
                     "duration": "00:50",
                     "room": "Gate 104",
-                    "slug": "gate_104_-_2013-09-07_13:23_-_prism_break_the_value_of_online_identities_-_frank_-_5162",
+                    "slug": "gate_104_-_2013-09-07_13:23_-_prism_break_the_value_of_online_identities_-_frank_ackermann_-_5162",
                     "title": "Prism Break – the value of online identities",
                     "subtitle": "",
                     "track": "Anonymität im Real Life und außerhalb des Internets",
@@ -208,17 +208,55 @@ Finally the talk supports the audience at reaching a better evaluation
 of #Neuland&#x27;s territory in which Prism, search-engines, clouds and big data exists next door.",
                     "description": "",
                     "persons": [
-                        {"id": "3939",  "full_public_name": "Frank"}
+                        {"id": "3939",  "full_public_name": "Frank Ackermann"}
+                    ],
+                    "links": [
+                    ]
+                  },
+                  {
+                    "id": "5145",
+                    "start": "14:23",
+                    "duration": "00:50",
+                    "room": "Gate 104",
+                    "slug": "gate_104_-_2013-09-07_14:23_-_quantify_the_world_-_tiefpunkt_-_5145",
+                    "title": "Quantify the World",
+                    "subtitle": "",
+                    "track": "Hack the planet",
+                    "type": "lecture",
+                    "language": "de",
+                    "abstract": "",
+                    "description": "",
+                    "persons": [
+                        {"id": "3920",  "full_public_name": "tiefpunkt"}
+                    ],
+                    "links": [
+                    ]
+                  },
+                  {
+                    "id": "5182",
+                    "start": "15:23",
+                    "duration": "00:50",
+                    "room": "Gate 104",
+                    "slug": "gate_104_-_2013-09-07_15:23_-_gigapix_gigaproblems_-_nuit_-_5182",
+                    "title": "Gigapix = Gigaproblems?",
+                    "subtitle": "",
+                    "track": "",
+                    "type": "lecture",
+                    "language": "de",
+                    "abstract": "Ein kurzer Exkurs in die Welt der grossen Panoramen. Was fuer Probleme treten bei Bildern die die 50GP Marke ueberschreiten auf und womit verarbeitet man eigentlich die Datenmenge?",
+                    "description": "",
+                    "persons": [
+                        {"id": "3458",  "full_public_name": "nuit"}
                     ],
                     "links": [
                     ]
                   },
                   {
                     "id": "5181",
-                    "start": "14:23",
+                    "start": "17:13",
                     "duration": "00:50",
                     "room": "Gate 104",
-                    "slug": "gate_104_-_2013-09-07_14:23_-_ipsec_how_to_use_vpn_with_enterprise_hardware_-_progamler_-_5181",
+                    "slug": "gate_104_-_2013-09-07_17:13_-_ipsec_how_to_use_vpn_with_enterprise_hardware_-_progamler_-_5181",
                     "title": "IPSEC How to use VPN with Enterprise Hardware",
                     "subtitle": "",
                     "track": "Web und IT-Security",
@@ -297,44 +335,6 @@ IPSEC (linux, juniper, netgear, fritzbox)
 IPSEC+GRE",
                     "persons": [
                         {"id": "3964",  "full_public_name": "proGamler"}
-                    ],
-                    "links": [
-                    ]
-                  },
-                  {
-                    "id": "5182",
-                    "start": "15:23",
-                    "duration": "00:50",
-                    "room": "Gate 104",
-                    "slug": "gate_104_-_2013-09-07_15:23_-_gigapix_gigaproblems_-_nuit_-_5182",
-                    "title": "Gigapix = Gigaproblems?",
-                    "subtitle": "",
-                    "track": "",
-                    "type": "lecture",
-                    "language": "de",
-                    "abstract": "Ein kurzer Exkurs in die Welt der grossen Panoramen. Was fuer Probleme treten bei Bildern die die 50GP Marke ueberschreiten auf und womit verarbeitet man eigentlich die Datenmenge?",
-                    "description": "",
-                    "persons": [
-                        {"id": "3458",  "full_public_name": "nuit"}
-                    ],
-                    "links": [
-                    ]
-                  },
-                  {
-                    "id": "5145",
-                    "start": "17:13",
-                    "duration": "00:50",
-                    "room": "Gate 104",
-                    "slug": "gate_104_-_2013-09-07_17:13_-_quantify_the_world_-_tiefpunkt_-_5145",
-                    "title": "Quantify the World",
-                    "subtitle": "",
-                    "track": "Hack the planet",
-                    "type": "lecture",
-                    "language": "de",
-                    "abstract": "",
-                    "description": "",
-                    "persons": [
-                        {"id": "3920",  "full_public_name": "tiefpunkt"}
                     ],
                     "links": [
                     ]
@@ -659,25 +659,6 @@ Note for English speakers: Even though this workshop is delivered in German we c
             "rooms": {
               "Gate 104": [
                   {
-                    "id": "5146",
-                    "start": "11:23",
-                    "duration": "00:50",
-                    "room": "Gate 104",
-                    "slug": "gate_104_-_2013-09-08_11:23_-_train_realtime_data_protocol_-_ollo_-_5146",
-                    "title": "Train Realtime Data Protocol",
-                    "subtitle": "Netzwerkprotokoll zur Zug-internen Kommunikation",
-                    "track": "Sicherheit von Infrastruktur",
-                    "type": "lecture",
-                    "language": "de",
-                    "abstract": "",
-                    "description": "",
-                    "persons": [
-                        {"id": "2422",  "full_public_name": "Ollo"}
-                    ],
-                    "links": [
-                    ]
-                  },
-                  {
                     "id": "5168",
                     "start": "12:23",
                     "duration": "00:50",
@@ -750,6 +731,25 @@ We’ll also highlight some of the infrastructure work that’s been done simpli
 ",
                     "persons": [
                         {"id": "3980",  "full_public_name": "Tobias Mueller"}
+                    ],
+                    "links": [
+                    ]
+                  },
+                  {
+                    "id": "5146",
+                    "start": "15:23",
+                    "duration": "00:50",
+                    "room": "Gate 104",
+                    "slug": "gate_104_-_2013-09-08_15:23_-_train_realtime_data_protocol_-_ollo_-_5146",
+                    "title": "Train Realtime Data Protocol",
+                    "subtitle": "Netzwerkprotokoll zur Zug-internen Kommunikation",
+                    "track": "Sicherheit von Infrastruktur",
+                    "type": "lecture",
+                    "language": "de",
+                    "abstract": "",
+                    "description": "",
+                    "persons": [
+                        {"id": "2422",  "full_public_name": "Ollo"}
                     ],
                     "links": [
                     ]

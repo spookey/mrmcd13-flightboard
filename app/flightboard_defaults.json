@@ -1,0 +1,25 @@
+{
+    "defaults": {
+        "shadingImages": [
+            "static/img/flightBoardHigh.png",
+            "static/img/flightBoardShad.png"
+        ],
+        "lettersSize": [
+            25,
+            34
+        ],
+        "messages": [
+            "void",
+            "null",
+            "false"
+        ],
+        "lettersImage": "static/img/flightBoardMingrayMonoRegular.png",
+        "pause": 10000,
+        "lettersSeq": " ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_.:,;#+~*?!(){}[]/\\\\&%|<>",
+        "speed": 150,
+        "flips": [
+            7,
+            14
+        ]
+    }
+}

@@ -2,33 +2,25 @@
 
 from flask import render_template, send_from_directory, flash, jsonify
 from config import dir_static
+from loghandler import logger
+from jsonhandler import load_local
 from service import *
 from app import app
 
 servicefunctions = {
-            'todayisday': todayisday(),
+            'get_day_number': get_day_number(),
         }
+app.jinja_env.globals.update(servicefunctions = servicefunctions)
 
 @app.route('/')
 @app.route('/index')
 def index():
+    logger.info('index requested')
     return render_template('main.html',
         title = 'Up Next',
-        servicefunctions = servicefunctions,
     )
 
 globald = {
-        'defaults': {
-            'lettersSeq': ' ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_.:,;#+~*?!(){}[]/\&%|<>',
-            'lettersSize': [25, 34],
-            'lettersImage': 'static/img/flightBoardMingrayMonoRegular.png',
-            'shadingImages': ['static/img/flightBoardHigh.png', 'static/img/flightBoardShad.png'],
-            'flips': [7, 14],
-            # 'sequential': True,
-            'speed': 150,
-            'pause': 10000,
-            'messages': ['void', 'null', 'false'],
-        },
         'time': {
             'messages': ['23:42'],
             'maxLength': 8,
@@ -53,10 +45,10 @@ def test():
         content = schedule(),
         )
 
-@app.route('/content.json')
+@app.route('/content')
 def content():
-    d = globald
-    return jsonify(d)
+    globald.update(load_local(flightboard_defaults))
+    return jsonify(globald)
 
 @app.route('/favicon.ico')
 def favicon():

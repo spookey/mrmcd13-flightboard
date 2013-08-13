@@ -1,56 +1,46 @@
 # -.- coding: utf-8 -.-
 
-import os, json, time
-from config import *
+import os, json, re, time
 from datetime import datetime, timedelta
 from urllib2 import urlopen
+from config import *
+from jsonhandler import get_json
 
 def mk_datetime(Ymd):
     return datetime.strptime(Ymd, '%Y-%m-%d')
 
-def load_local_json():
-    if os.path.exists(local_frab_feed):
-        with open(local_frab_feed, 'r') as f:
-            return decode_json(f.read())
+def format_date(datetimeobj):
+    return datetime.strftime(datetimeobj, '%d.%m.%Y')
 
-def load_remote_json():
-    return decode_json(web_scrape(remote_frab_feed))
+def get_day_number():
+    json = get_json()
+    content = None
+    if json is not None:
+        content = json['schedule']['conference']['days']
 
-def web_scrape(url):
-    try:
-        response = urlopen(url)
-        return response.read()
-    except urllib2.HTTPError as e:
-        logger.warning('HTTPError: %s' %(str(e.code)))
-    except urllib2.URLError as e:
-        logger.warning('URLError: %s' %(str(e.reason)))
-    except httplib.HTTPException as e:
-        logger.warning('HTTPException')
-    except Exception:
-        logger.warning('something happened')
+        def _fmt(today=datetime.now(), curday='-1', lastday=content[-1]['index']):
+            return '%s of %s' %(curday, lastday), format_date(today)
 
-def decode_json(input):
-    # import demjson
-    try:
-        content = json.loads(input)
-        # content = demjson.decode(input)
-    except (ValueError) as e:
-        print 'error parsing json!!1! %s' %(e)
-    else:
-        return content
+        for data in content:
+            if( datetime.now() - mk_datetime(data['date']) >= timedelta(seconds=0)):
+                result = _fmt(mk_datetime(data['date']), data['index'])
+                break;
+            else:
+                result = _fmt(lastday='-1')
+        return result
 
-def todayisday():
-    for data in load_json()['schedule']['conference']['days']:
-        if( datetime.now() - mk_datetime(data['date']) >= timedelta(seconds=0)):
-            result = str(data['date']), str(data['index'])
-            break;
-        else:
-            result = str(datetime.strftime(datetime.now(), '%Y-%m-%d')), str(-1)
-    return result
+    return content
+
+def is_it_conference():
+    json = get_json()
+    if json is not None:
+        return (mk_datetime(json['schedule']['conference']['start']) <= datetime.now() <= mk_datetime(content['schedule']['conference']['end']))
 
 def schedule():
-
-    content = load_local_json()
+    json =  get_json()
+    content = None
+    if json is not None:
+        content = json['schedule']['conference']['days']
 
     result = []
 
@@ -58,7 +48,7 @@ def schedule():
     result.append('|||')
 
     if content is not None:
-        for d in content['schedule']['conference']['days']:
+        for d in content:
             result.append(str(d['date']))
             result.append(mk_datetime(d['date']))
             result.append('-->')
@@ -66,8 +56,7 @@ def schedule():
             result.append(str(mk_datetime(d['date']) - datetime.now()))
             result.append('//')
 
-        result.append('-' * 23)
-        isitconferencenow = (mk_datetime(content['schedule']['conference']['start']) <= datetime.now() <= mk_datetime(content['schedule']['conference']['end']))
-        result.append('Today is conference? %s' %(isitconferencenow))
+    result.append('-' * 23)
+    result.append('Today is conference? %s' %(is_it_conference()))
 
     return result
