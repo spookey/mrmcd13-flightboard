@@ -14,10 +14,10 @@
               "Gate 104": [
                   {
                     "id": "5167",
-                    "start": "17:23",
+                    "start": "17:53",
                     "duration": "00:30",
                     "room": "Gate 104",
-                    "slug": "gate_104_-_2013-09-06_17:23_-_mrmcd2013_takeoff_-_unicorn_-_5167",
+                    "slug": "gate_104_-_2013-09-06_17:53_-_mrmcd2013_takeoff_-_unicorn_-_5167",
                     "title": "MRMCD2013: Takeoff",
                     "subtitle": "We wish you a pleasent journey",
                     "track": "Luftfahrt",
@@ -32,31 +32,65 @@
                     ]
                   },
                   {
-                    "id": "5171",
-                    "start": "19:03",
+                    "id": "5189",
+                    "start": "18:23",
                     "duration": "00:50",
                     "room": "Gate 104",
-                    "slug": "gate_104_-_2013-09-06_19:03_-_open_data_in_deutschland_-_claudia_schwegmann_-_5171",
-                    "title": "Open Data in Deutschland",
-                    "subtitle": "Eine Übersicht zur politischen Situation in Deutschland, zum internaltionalen Kontext und zu konkreten Projekten",
+                    "slug": "gate_104_-_2013-09-06_18:23_-_don_t_remove_your_ethics_before_flight_-_fukami_-_5189",
+                    "title": "Don&#x27;t remove your ethics before flight",
+                    "subtitle": "",
                     "track": "Hack the planet",
                     "type": "lecture",
                     "language": "de",
-                    "abstract": "In diesem Vortrag wird der Stand der Open Data Bewegung in Deutschland vorgestellt: die rechtliche Situation, der bisherige politische Prozess und sowie der gegenwärtige Stand der Open Data Umsetzung durch staatlicher Behörden oder zivilgesellschaftlicher Initiativen. Um eine Einschätzung der Situation in Deutschland zu erleichtern werden auch Entwicklungen im internationalen Kontext kurz beschrieben.",
-                    "description": "Die Open Knowledge Foundation Deutschland engagiert sich seit Jahren für Open Data in Deutschland. Im Gegensatz zu vielen anderen westlichen Ländern ist Open Data in Deutschland jedoch immer noch in den Kinderschuhen. Open Data steht nicht hoch auf der politischen Agenda und die konkreten Umsetzungen auf kommunaler, Landes- oder Bundesebene sind rar. 
-Schwerpunkt des Vortrags ist ein Überblick über den aktuellen Stand von Open Data in Deutschland (rechtlich, politisch, Projekte). Die Situation in Deutschland wird dabei punktuell mit Entwicklungen im internationalen Kontext verglichen. Um eine Vorstellung zu den Anwendungsfeldern von Open Data zu geben, werden einige konkrete Projekte von Behörden und von der Open Knowledge Foundation vorgestellt. Abschließend werden die Forderungen der Netz Community zur Weiterentwicklung von Open Data in Deutschland zur Diskussion gestellt. ",
+                    "abstract": "",
+                    "description": "",
                     "persons": [
-                        {"id": "3951",  "full_public_name": "Claudia Schwegmann"}
+                        {"id": "1588",  "full_public_name": "fukami"}
+                    ],
+                    "links": [
+                    ]
+                  },
+                  {
+                    "id": "5208",
+                    "start": "19:23",
+                    "duration": "00:50",
+                    "room": "Gate 104",
+                    "slug": "gate_104_-_2013-09-06_19:23_-_slide_to_unlock_--_or_provide_your_facebook_pictures_-_bluec0re_-_schalla_-_5208",
+                    "title": "Slide To Unlock -- or Provide Your Facebook Pictures?",
+                    "subtitle": "A Critical Analysis of Biometric Authentication Mechanisms",
+                    "track": "Web und IT-Security",
+                    "type": "lecture",
+                    "language": "de",
+                    "abstract": "In this talk we present a critical analysis of the four most appropriate candidates of biometric authentication mechanisms on mobile devices: fingerprint, face, voice and iris recognition. The results of our analysis show that there is still no compromise between usability and safety, because especially on mobile devices the unlock mechanism has to be quick and easy and this fact affects the overall security of the authentication mechanism. Using precise cameras and good microphones in mobile devices it is possible to use biometric authentication mechanisms like face, iris or voice recognition, but these methods are still in an immature phase and they suffer from different vulnerabilities which will be described in our presentation. The main reason of this problem is the lack of liveness detection which is crucial for all biometric authentication methods. We show that pictures retrieved from social media are enough to bypass the current biometric recognition mechanisms, even the approaches including built-in liveness detection on android phones.",
+                    "description": "Outline
+----------
+Introduction (5&#x27;)
+Basics of Biometric Authentication (10&#x27;)
+Mobile Authentication Approaches (10&#x27;)
+Description of discovered/intrinsic Weaknesses (10&#x27;)
+Introduction of an Evaluation Library (10&#x27;)
+Q&amp;A (5&#x27;)
+
+What will attendees gain from the presentation?
+---------------------------------------------------------------------
+* Thorough understanding of biometric authentication mechanisms
+* Connected pitfalls and intrinsic vulnerabilities
+* Introduction to tools to properly assess biometric authentication mechanisms on mobile devices
+
+",
+                    "persons": [
+                        {"id": "4007",  "full_public_name": "bluec0re"},
+                        {"id": "3943",  "full_public_name": "schalla"}
                     ],
                     "links": [
                     ]
                   },
                   {
                     "id": "5196",
-                    "start": "20:03",
+                    "start": "20:23",
                     "duration": "00:50",
                     "room": "Gate 104",
-                    "slug": "gate_104_-_2013-09-06_20:03_-_too-smart-tvs_-_erik_tews_-_5196",
+                    "slug": "gate_104_-_2013-09-06_20:23_-_too-smart-tvs_-_erik_tews_-_5196",
                     "title": "Too-Smart-TVs",
                     "subtitle": "Wie intelligente Fernseher zum Zuschauertracking missbraucht werden.",
                     "track": "Anonymität im Real Life und außerhalb des Internets",
@@ -72,10 +106,10 @@ Schwerpunkt des Vortrags ist ein Überblick über den aktuellen Stand von Open D
                   },
                   {
                     "id": "5199",
-                    "start": "21:03",
+                    "start": "21:23",
                     "duration": "00:50",
                     "room": "Gate 104",
-                    "slug": "gate_104_-_2013-09-06_21:03_-_torservers_net_-_mo_-_5199",
+                    "slug": "gate_104_-_2013-09-06_21:23_-_torservers_net_-_mo_-_5199",
                     "title": "Torservers.net",
                     "subtitle": "",
                     "track": "Web und IT-Security",
@@ -92,11 +126,31 @@ Schwerpunkt des Vortrags ist ein Überblick über den aktuellen Stand von Open D
               ],
               "Gate 111": [
                   {
-                    "id": "5152",
-                    "start": "19:03",
+                    "id": "5171",
+                    "start": "19:23",
                     "duration": "00:50",
                     "room": "Gate 111",
-                    "slug": "gate_111_-_2013-09-06_19:03_-_content_security_policy_-_ein_weiterer_vergeblicher_versuch_cross-site_scripting_zu_bandigen_-_sbieber_-_5152",
+                    "slug": "gate_111_-_2013-09-06_19:23_-_open_data_in_deutschland_-_claudia_schwegmann_-_5171",
+                    "title": "Open Data in Deutschland",
+                    "subtitle": "Eine Übersicht zur politischen Situation in Deutschland, zum internaltionalen Kontext und zu konkreten Projekten",
+                    "track": "Hack the planet",
+                    "type": "lecture",
+                    "language": "de",
+                    "abstract": "In diesem Vortrag wird der Stand der Open Data Bewegung in Deutschland vorgestellt: die rechtliche Situation, der bisherige politische Prozess und sowie der gegenwärtige Stand der Open Data Umsetzung durch staatlicher Behörden oder zivilgesellschaftlicher Initiativen. Um eine Einschätzung der Situation in Deutschland zu erleichtern werden auch Entwicklungen im internationalen Kontext kurz beschrieben.",
+                    "description": "Die Open Knowledge Foundation Deutschland engagiert sich seit Jahren für Open Data in Deutschland. Im Gegensatz zu vielen anderen westlichen Ländern ist Open Data in Deutschland jedoch immer noch in den Kinderschuhen. Open Data steht nicht hoch auf der politischen Agenda und die konkreten Umsetzungen auf kommunaler, Landes- oder Bundesebene sind rar. 
+Schwerpunkt des Vortrags ist ein Überblick über den aktuellen Stand von Open Data in Deutschland (rechtlich, politisch, Projekte). Die Situation in Deutschland wird dabei punktuell mit Entwicklungen im internationalen Kontext verglichen. Um eine Vorstellung zu den Anwendungsfeldern von Open Data zu geben, werden einige konkrete Projekte von Behörden und von der Open Knowledge Foundation vorgestellt. Abschließend werden die Forderungen der Netz Community zur Weiterentwicklung von Open Data in Deutschland zur Diskussion gestellt. ",
+                    "persons": [
+                        {"id": "3951",  "full_public_name": "Claudia Schwegmann"}
+                    ],
+                    "links": [
+                    ]
+                  },
+                  {
+                    "id": "5152",
+                    "start": "20:23",
+                    "duration": "00:50",
+                    "room": "Gate 111",
+                    "slug": "gate_111_-_2013-09-06_20:23_-_content_security_policy_-_ein_weiterer_vergeblicher_versuch_cross-site_scripting_zu_bandigen_-_sbieber_-_kathrin_schaberle_-_5152",
                     "title": " Content Security Policy - Ein weiterer (vergeblicher) Versuch Cross-Site Scripting zu bändigen?",
                     "subtitle": "",
                     "track": "Web und IT-Security",
@@ -105,17 +159,18 @@ Schwerpunkt des Vortrags ist ein Überblick über den aktuellen Stand von Open D
                     "abstract": "Cross-Site Scripting (XSS) Schwachstellen sind in der OWASP TOP 10 der Jahre 2010 und 2013 auf Platz 2 bzw. 3. Die Behebung solcher Schwachstellen ist bis heute trotz Hilfsmitteln noch sehr unzuverlässig. Content Security Policy (=CSP) ist eine im Browser implementierte Schutzfunktion, um die Gefahr XSS auf Seiten der Clients einzudämmen. Mithilfe der CSP ist es möglich, dem Browser erlaubte Quellen für eingebundene Skript- oder Medien-Inhalte (z. B. &lt;scrip&gt;, &lt;img&gt;, &lt;object&gt;) zu definieren. In diesem Vortrag wird die Entstehung, sowie der technische Hintergrund der CSP erklärt. Dabei werden die wichtigsten Restriktionsparameter für eine Live-Demonstration herausgepickt und erläutert. Es wird ein Lösungsansatz aufgezeigt, wie man CSP in die eigene Webapplikation integrieren kann und dabei Probleme des CSP-Designs erläutert. ",
                     "description": "",
                     "persons": [
-                        {"id": "3923",  "full_public_name": "sbieber"}
+                        {"id": "3923",  "full_public_name": "sbieber"},
+                        {"id": "3997",  "full_public_name": "Kathrin Schäberle"}
                     ],
                     "links": [
                     ]
                   },
                   {
                     "id": "5157",
-                    "start": "21:03",
+                    "start": "21:23",
                     "duration": "00:50",
                     "room": "Gate 111",
-                    "slug": "gate_111_-_2013-09-06_21:03_-_bausatze_in_hackerspaces_-_muzy_-_5157",
+                    "slug": "gate_111_-_2013-09-06_21:23_-_bausatze_in_hackerspaces_-_muzy_-_5157",
                     "title": "Bausätze in Hackerspaces",
                     "subtitle": "Von der Idee zur Einnahmequelle",
                     "track": "Open Source Entwicklung",
@@ -137,6 +192,52 @@ Einen kleinen Ausblick auf die Inhalte gibt es bereits im RaumZeitLabor Blog (si
                   }
               ],
               "Gate 105 (Workshop Airlines)": [
+                  {
+                    "id": "5216",
+                    "start": "19:23",
+                    "duration": "01:30",
+                    "room": "Gate 105 (Workshop Airlines)",
+                    "slug": "gate_105_workshop_airlines_-_2013-09-06_19:23_-_nahmaschine_einfuhrung_-_jiska_-_5216",
+                    "title": "Nähmaschine (Einführung)",
+                    "subtitle": "Workshopreihe für Nährdinen und Nährds",
+                    "track": "",
+                    "type": "workshop",
+                    "language": "de",
+                    "abstract": "Technische Hintergründe, Kissen nähen",
+                    "description": "In diesem Workshop lernt ihr, wie eine Nähmaschine funktioniert. Dieser Teil ist auch für die weniger Nähbegeisterten interessant ;)
+
+Danach habt ihr die Möglichkeit, einen Kissenbezug zu nähen. Ideal wäre es also, wenn ihr wisst, wie groß eure Kissen zu Hause so sind oder sogar ein Kissen mitbringt. Standardmaße sind 40x40cm und 80x80cm.
+
+Das Kissen könnt ihr im Rahmen der nachfolgenden Workshops noch besticken oder mit flauschiger Flockfolie bedrucken.",
+                    "persons": [
+                        {"id": "3921",  "full_public_name": "jiska"}
+                    ],
+                    "links": [
+                    ]
+                  },
+                  {
+                    "id": "5218",
+                    "start": "21:03",
+                    "duration": "00:40",
+                    "room": "Gate 105 (Workshop Airlines)",
+                    "slug": "gate_105_workshop_airlines_-_2013-09-06_21:03_-_nahmaschine_bikini_-_jiska_-_5218",
+                    "title": "Nähmaschine (Bikini)",
+                    "subtitle": "Workshopreihe für Nährdinen und Nährds",
+                    "track": "",
+                    "type": "workshop",
+                    "language": "de",
+                    "abstract": "Bikinis, von klein bis groß",
+                    "description": "In diesem Workshop bekommt ihr erklärt, wie man Bikinis in allen Größen selber nähen kann. Manche der Techniken könnt ihr auch verwenden, um existierende Bikinis zu verbessern.
+
+Für kleine Größen bekommt ihr gezeigt, wie man daraus optisch mehr machen kann. Für große Größen bekommt ihr gezeigt, wie man ein Ergebnis bekommt, das etwas hält.
+
+Da das Nähen sehr individuell ist und das Ausmessen und Anpassen  zeitaufwendig sind, handelt es sich nur um einen Vortrag, was alles möglich ist, sowie ein paar Ergebnisse zum Anfassen.",
+                    "persons": [
+                        {"id": "3921",  "full_public_name": "jiska"}
+                    ],
+                    "links": [
+                    ]
+                  }
               ]
             }
           },
@@ -146,24 +247,19 @@ Einen kleinen Ausblick auf die Inhalte gibt es bereits im RaumZeitLabor Blog (si
             "rooms": {
               "Gate 104": [
                   {
-                    "id": "5156",
+                    "id": "5221",
                     "start": "11:23",
                     "duration": "00:50",
                     "room": "Gate 104",
-                    "slug": "gate_104_-_2013-09-07_11:23_-_wirtschaft_hacken_-_ewu_-_5156",
-                    "title": "Wirtschaft hacken",
+                    "slug": "gate_104_-_2013-09-07_11:23_-_kurzstreckenfluge_lightning_talks_-_5221",
+                    "title": "Kurzstreckenflüge (Lightning Talks)",
                     "subtitle": "",
                     "track": "Hack the planet",
-                    "type": "lecture",
+                    "type": "lightning_talk",
                     "language": "de",
-                    "abstract": "wirtschaft ist (leider) mächtiger als politik. und sie bzw die menschen darin benehmen sich nicht gut, d.h. verteilen um von unten nach oben, machen die umwelt kaputt, sägen am datenschutz und so weiter. gefällt mir nicht. nur was tun? 
-
-unser ansatz: rein ins system, schauen wie genau es funktioniert, und dann von innen heraus die dinge zum positiveren verbiegen. anti-mengenrabatt, umwelt-ausgleich, freiwilliges löschen von kundendaten, solche sachen. und das ganze mit einem freien (betriebs-)system, das cc-by-sa von jede_m kopierbar und nutzbar ist. wie das geht, warum es funktioniert, und was aktuelle entwicklungen sowie schwierigkeiten sind, darüber würde ich gern was erzählen. 
-
-vortragen durfte ich schon in einigen hackerspaces, bei den letzten mrmcd war ich auch schon; der vortrag 2013 wäre also ähnlich, aber nicht gleich. ich würde die entwicklungen und den aktuellsten stand darstellen, genauer auf datenschutz und datennutzung eingehen, gern auch auf andere themenfelder die von den user_innen gewünscht werden. parallelen zur piratenpartei? postwachstums-ökonomie? rechtliche probleme? was ihr an einblicken in alternatives wirtschaften wollt. ",
-                    "description": "",
+                    "abstract": "“In the future, everyone will be world-famous for 15 minutes.” (nach Andy Warhol)",
+                    "description": "Du hast ein cooles Projekt, dass du der Welt vorstellen willst? Hier hast du die Chance es in 10 Minuten zu zeigen.",
                     "persons": [
-                        {"id": "3395",  "full_public_name": "ewu"}
                     ],
                     "links": [
                     ]
@@ -194,7 +290,7 @@ vortragen durfte ich schon in einigen hackerspaces, bei den letzten mrmcd war ic
                     "room": "Gate 104",
                     "slug": "gate_104_-_2013-09-07_13:23_-_prism_break_the_value_of_online_identities_-_frank_ackermann_-_5162",
                     "title": "Prism Break – the value of online identities",
-                    "subtitle": "",
+                    "subtitle": "(de) or",
                     "track": "Anonymität im Real Life und außerhalb des Internets",
                     "type": "lecture",
                     "language": "en",
@@ -205,7 +301,9 @@ in-depth-profiling and potential misuse.
 This non-technical talk illustrates in an easily comprehensible way the value of online identities in our modern internet relying society. It
 explains how information is processed, used and analyzed by internet platforms and how this opens vulnerabilities or fraudulent misuse.
 Finally the talk supports the audience at reaching a better evaluation
-of #Neuland&#x27;s territory in which Prism, search-engines, clouds and big data exists next door.",
+of #Neuland&#x27;s territory in which Prism, search-engines, clouds and big data exists next door.
+
+(Anmerkung: In Rücksprache mit den Anwesenden kann der Vortrag natürlich auch in Deutsch stattfinden ;-)",
                     "description": "",
                     "persons": [
                         {"id": "3939",  "full_public_name": "Frank Ackermann"}
@@ -253,10 +351,10 @@ of #Neuland&#x27;s territory in which Prism, search-engines, clouds and big data
                   },
                   {
                     "id": "5181",
-                    "start": "17:13",
+                    "start": "17:23",
                     "duration": "00:50",
                     "room": "Gate 104",
-                    "slug": "gate_104_-_2013-09-07_17:13_-_ipsec_how_to_use_vpn_with_enterprise_hardware_-_progamler_-_5181",
+                    "slug": "gate_104_-_2013-09-07_17:23_-_ipsec_how_to_use_vpn_with_enterprise_hardware_-_progamler_-_5181",
                     "title": "IPSEC How to use VPN with Enterprise Hardware",
                     "subtitle": "",
                     "track": "Web und IT-Security",
@@ -341,10 +439,10 @@ IPSEC+GRE",
                   },
                   {
                     "id": "5150",
-                    "start": "18:13",
+                    "start": "18:23",
                     "duration": "00:50",
                     "room": "Gate 104",
-                    "slug": "gate_104_-_2013-09-07_18:13_-_beruf_fluglotse_-_akiko_-_5150",
+                    "slug": "gate_104_-_2013-09-07_18:23_-_beruf_fluglotse_-_akiko_-_5150",
                     "title": "Beruf Fluglotse",
                     "subtitle": "",
                     "track": "Luftfahrt",
@@ -368,10 +466,10 @@ Diskussion/ Fragen",
                   },
                   {
                     "id": "5160",
-                    "start": "19:13",
+                    "start": "19:23",
                     "duration": "00:50",
                     "room": "Gate 104",
-                    "slug": "gate_104_-_2013-09-07_19:13_-_the_slingshot_channel_-_phanomen_oder_kalkul_-_jorg_sprave_-_5160",
+                    "slug": "gate_104_-_2013-09-07_19:23_-_the_slingshot_channel_-_phanomen_oder_kalkul_-_jorg_sprave_-_5160",
                     "title": "&quot;The Slingshot Channel&quot; - Phänomen oder Kalkül?",
                     "subtitle": "Wie man mit Nischenthemen im Web erfolgreich sein kann",
                     "track": "",
@@ -388,10 +486,10 @@ Diskussion/ Fragen",
                   },
                   {
                     "id": "5151",
-                    "start": "20:13",
+                    "start": "20:23",
                     "duration": "00:50",
                     "room": "Gate 104",
-                    "slug": "gate_104_-_2013-09-07_20:13_-_drohnendebatte_-_frank_-_5151",
+                    "slug": "gate_104_-_2013-09-07_20:23_-_drohnendebatte_-_frank_-_5151",
                     "title": "Drohnendebatte",
                     "subtitle": "",
                     "track": "Quadrokopter / Dronen",
@@ -427,20 +525,24 @@ Diskussion/ Fragen",
                     ]
                   },
                   {
-                    "id": "5153",
+                    "id": "5156",
                     "start": "12:23",
                     "duration": "00:50",
                     "room": "Gate 111",
-                    "slug": "gate_111_-_2013-09-07_12:23_-_android_hacking_lab_-_sbieber_-_5153",
-                    "title": "Android Hacking Lab",
+                    "slug": "gate_111_-_2013-09-07_12:23_-_wirtschaft_hacken_-_ewu_-_5156",
+                    "title": "Wirtschaft hacken",
                     "subtitle": "",
-                    "track": "Web und IT-Security",
+                    "track": "Hack the planet",
                     "type": "lecture",
                     "language": "de",
-                    "abstract": "Laut einer aktuellen Studie von Kaspersky (in 2013) wird 99,9% der neu entwickelten Malware bei Mobilgeräten für Geräte auf Basis des Betriebssystems Android entwickelt. Dieser Vortrag beschäftigt sich mit der Überprüfung der Sicherheit von Android-Applikationen. Um die Sicherheitsuntersuchung von Android-Applikationen zu veranschaulichen, werden Methoden und Vorgehensweisen, mögliche Tools, tückische Hürden und Fallstricke beim Aufbau der Untersuchungsumgebung vorgestellt. Dies wird abschließend anhand der bereits betriebenen Forschung mittels bereits gefundener und von Herstellern behobener Schwachstellen konkretisiert. ",
+                    "abstract": "wirtschaft ist (leider) mächtiger als politik. und sie bzw die menschen darin benehmen sich nicht gut, d.h. verteilen um von unten nach oben, machen die umwelt kaputt, sägen am datenschutz und so weiter. gefällt mir nicht. nur was tun? 
+
+unser ansatz: rein ins system, schauen wie genau es funktioniert, und dann von innen heraus die dinge zum positiveren verbiegen. anti-mengenrabatt, umwelt-ausgleich, freiwilliges löschen von kundendaten, solche sachen. und das ganze mit einem freien (betriebs-)system, das cc-by-sa von jede_m kopierbar und nutzbar ist. wie das geht, warum es funktioniert, und was aktuelle entwicklungen sowie schwierigkeiten sind, darüber würde ich gern was erzählen. 
+
+vortragen durfte ich schon in einigen hackerspaces, bei den letzten mrmcd war ich auch schon; der vortrag 2013 wäre also ähnlich, aber nicht gleich. ich würde die entwicklungen und den aktuellsten stand darstellen, genauer auf datenschutz und datennutzung eingehen, gern auch auf andere themenfelder die von den user_innen gewünscht werden. parallelen zur piratenpartei? postwachstums-ökonomie? rechtliche probleme? was ihr an einblicken in alternatives wirtschaften wollt. ",
                     "description": "",
                     "persons": [
-                        {"id": "3923",  "full_public_name": "sbieber"}
+                        {"id": "3395",  "full_public_name": "ewu"}
                     ],
                     "links": [
                     ]
@@ -465,10 +567,10 @@ Diskussion/ Fragen",
                   },
                   {
                     "id": "5176",
-                    "start": "17:13",
+                    "start": "17:23",
                     "duration": "00:50",
                     "room": "Gate 111",
-                    "slug": "gate_111_-_2013-09-07_17:13_-_alice_und_bob_halten_das_maul_-_herr_urbach_-_5176",
+                    "slug": "gate_111_-_2013-09-07_17:23_-_alice_und_bob_halten_das_maul_-_herr_urbach_-_5176",
                     "title": "Alice und Bob halten das Maul",
                     "subtitle": "Was tun bei Polizeikontrollen?",
                     "track": "Physical Security",
@@ -496,10 +598,10 @@ Also, was kommt alles im Workshop dran?
                   },
                   {
                     "id": "5155",
-                    "start": "18:13",
+                    "start": "18:23",
                     "duration": "00:50",
                     "room": "Gate 111",
-                    "slug": "gate_111_-_2013-09-07_18:13_-_magnetringkernspeicher_-_grundlagen_und_aufbau_-_jochen_kunz_-_5155",
+                    "slug": "gate_111_-_2013-09-07_18:23_-_magnetringkernspeicher_-_grundlagen_und_aufbau_-_jochen_kunz_-_5155",
                     "title": "Magnetringkernspeicher - Grundlagen und Aufbau",
                     "subtitle": "",
                     "track": "Hack the planet",
@@ -517,10 +619,10 @@ Der Vortrag stellt kurz einige Vorgängertechnologien und deren Probleme vor, er
                   },
                   {
                     "id": "5179",
-                    "start": "19:13",
+                    "start": "19:23",
                     "duration": "00:50",
                     "room": "Gate 111",
-                    "slug": "gate_111_-_2013-09-07_19:13_-_why_are_gandhi_and_thoreau_afk_-_jan-peter_kleinhans_-_5179",
+                    "slug": "gate_111_-_2013-09-07_19:23_-_why_are_gandhi_and_thoreau_afk_-_jan-peter_kleinhans_-_5179",
                     "title": "Why are Gandhi and Thoreau AFK?",
                     "subtitle": "In Search for Civil Disobedience online",
                     "track": "Web und IT-Security",
@@ -537,18 +639,22 @@ Der Vortrag stellt kurz einige Vorgängertechnologien und deren Probleme vor, er
               ],
               "Gate 105 (Workshop Airlines)": [
                   {
-                    "id": "5148",
+                    "id": "5217",
                     "start": "11:23",
-                    "duration": "00:50",
+                    "duration": "01:30",
                     "room": "Gate 105 (Workshop Airlines)",
-                    "slug": "gate_105_workshop_airlines_-_2013-09-07_11:23_-_workshopreihe_fur_nahrds_und_nahrdinen_stickmaschine_schneidplotter_shirtpresse_nahmaschine_-_jiska_-_5148",
-                    "title": "Workshopreihe für Nährds und Nährdinen (Stickmaschine, Schneidplotter/Shirtpresse, Nähmaschine)",
-                    "subtitle": "",
-                    "track": "Hack the planet",
-                    "type": "workshop",
+                    "slug": "gate_105_workshop_airlines_-_2013-09-07_11:23_-_einfuhrung_stickmaschine_-_jiska_-_5217",
+                    "title": "Einführung Stickmaschine",
+                    "subtitle": "Workshopreihe für Nährdinen und Nährds",
+                    "track": "",
+                    "type": "",
                     "language": "de",
-                    "abstract": "",
-                    "description": "",
+                    "abstract": "Besticken und Motiverstellung",
+                    "description": "In diesem Workshop bekommt ihr eine Einführung darüber, wie eine Stickmaschine funktioniert. Ihr bekommt gezeigt, welche Fäden wofür gedacht sind, welche Textilien sich wie besticken lassen, usw. Außerdem bekommt ihr gezeigt, was bei der Motivwahl zu beachten ist und wie man Stickdateien erstellt.
+
+Stickgarn in über 120 Farben sowie einige Handtücher werden während der gesamten Veranstaltung vor Ort sein. Die neue Stickmaschine des RaumZeitLabors kann einen Bereich von bis zu 36x20cm besticken, also zum Beispiel die gesamte Rückseite eines Hoodies.
+
+Natürlich könnt ihr auch eure eigenen Sachen besticken. Gut geeignet sind beispielsweise Labcoats, Handtücher sowie Hoodies und Pullover. Bei T-Shirts müsst ihr darauf achten, dass sie nicht aus zu dünnem Stoff sind, der sich zu stark dehnt (bei den typischen Herren-T-Shirts kein Problem).",
                     "persons": [
                         {"id": "3921",  "full_public_name": "jiska"}
                     ],
@@ -556,48 +662,70 @@ Der Vortrag stellt kurz einige Vorgängertechnologien und deren Probleme vor, er
                     ]
                   },
                   {
-                    "id": "5203",
-                    "start": "12:23",
-                    "duration": "04:00",
+                    "id": "5220",
+                    "start": "13:03",
+                    "duration": "01:30",
                     "room": "Gate 105 (Workshop Airlines)",
-                    "slug": "gate_105_workshop_airlines_-_2013-09-07_12:23_-_arduino_fur_anfanger_-_muzy_-_5203",
-                    "title": "Arduino für Anfänger",
-                    "subtitle": "Löten, blinken und die Welt verändern",
+                    "slug": "gate_105_workshop_airlines_-_2013-09-07_13:03_-_schneidplotter_und_shirtpresse_-_jiska_-_5220",
+                    "title": "Schneidplotter und Shirtpresse ",
+                    "subtitle": "Workshopreihe für Nährdinen und Nährds",
                     "track": "",
                     "type": "workshop",
                     "language": "de",
-                    "abstract": "",
-                    "description": "Du willst löten lernen? Kenntnisse vertiefen oder einfach mal wieder in netter Gesellschaft löten? Dann ist dieser Workshop genau das richtige für Dich!
+                    "abstract": "Folien schneiden zum Bekleben von Notebooks, Bedrucken von Kleidung, ...",
+                    "description": "In diesem Workshop bekommt ihr gezeigt, welche Folien es gibt und wofür sie sich eignen. Klebefolien gibt es beispielsweise für Notebooks, Autos, Fenster, ... Auch bei Shirtfolien sind die Anwendungsbereiche zahlreich.
 
-&lt;b&gt;Was?&lt;/b&gt;
+Ihr bekommt gezeigt, was man bei der Motiverstellung beachten sollte. Ihr lernt, wie eine Shirtfolie aufgebaut ist, was der Schneidplotter da wie tief schneiden sollte und wie sie auf Shirts hält.
 
-Wir löten gemeinsam einen Arduino-UNO kompatiblen Playduino One. Vorher lernst Du gemeinsam mit anderen Workshopteilnehmern die wichtigsten Löttechniken. Die Arduino-Plattform ist eine Microcontroller-Plattform für Einsteiger und Fortgeschrittene. Eine einfach erlernbare Programmiersprache mit vielen Funktionen läd zum programmieren ein – die ausgeklügelte Hardware ermöglicht auch Anfängern schnelle Erfolge!
+Folien für viele Anwendungsbereiche und in tollen Farben werden während der gesamten Veranstaltung vor Ort sein. Desweiteren gibt es einen Schneidplotter und eine Shirtpresse. T-Shirts in Standardgrößen (Herren und Damen) sowie verschiedenen Farben sind schon vorhanden. 
 
-Ist Dein eigenes Board erst gelötet werden wir das Board gemeinsam in Betrieb nehmen und wenn nötig noch einige Stellen verbessern. Zusätzlich unterstützen wir Dich dein erstes kleines Programm zu schreiben und die Möglichkeiten der Arduino-Plattform zu entdecken! Dazu haben wir dir auch noch ein Breadboard, coole Sensoren und andere Elektronikbauteile zusammengestellt :)
-
-&lt;b&gt;Was muss du mitbringen?&lt;/b&gt;
-
-So gut wie nichts! Wir bereiten alles für Dich vor, hauptsache Du bist anwesend! Vorwissen ist nicht notwendig; der Workshop richtet sich an Jugendliche und Erwachsene. Wir empfehlen dein Notebook mitzubringen damit Du die Arduino-Entwicklungsumgebung installieren kannst um direkt mit deinem Arduino zu experimentieren.
-
-Werkzeuge und Lötutensilien sind zum Workshop vorhanden. Wenn Du magst kannst Du allerdings Deine eigene Lötstation oder Deinen eigenen Lötkolben mitbringen.
-
-&lt;b&gt;Kosten&lt;/b&gt;
-
-Um das Verbrauchsmaterial und die Bausatzteile zu finanzieren, müssen wir einen kleinen Unkostenbeitrag erheben. Dieser beträgt 40€ pro Person und ist zum Workshop mitzubringen. Bitte sei 5 Minuten vor Workshopbeginn vor Ort, damit wir pünktlich starten lönnen.
-
-Note for English speakers: Even though this workshop is delivered in German we can arrange a workshop in English. Please drop me a line at muzy [here comes the at sign] hacklace [here comes the dot] and the ORG and we will figure out a solution.",
+Natürlich könnt ihr auch eure eigenen Textilien mitbringen. Diese sollten bügelbar sein (bzw. ansonsten an einer verdeckten Stelle testbar).
+Viele Textilien, die sich nicht für die Stickmaschine eignen, lassen sich trotzdem mit Folie bedrucken. Für alle Textilbegeisterten lohnt sich dieser Workshop also auch ;)",
                     "persons": [
-                        {"id": "3878",  "full_public_name": "muzy"}
+                        {"id": "3921",  "full_public_name": "jiska"}
+                    ],
+                    "links": [
+                    ]
+                  },
+                  {
+                    "id": "5219",
+                    "start": "17:23",
+                    "duration": "02:00",
+                    "room": "Gate 105 (Workshop Airlines)",
+                    "slug": "gate_105_workshop_airlines_-_2013-09-07_17:23_-_nahmaschine_hoodies_-_jiska_-_5219",
+                    "title": "Nähmaschine (Hoodies)",
+                    "subtitle": "Workshopreihe für Nährdinen und Nährds",
+                    "track": "",
+                    "type": "workshop",
+                    "language": "de",
+                    "abstract": "Hoodies - zum Wenden, mit tierischen Erweiterungen, ...",
+                    "description": "Hier bekommt ihr gezeigt, wie man Hoodies näht oder bestehende Hoodies erweitert. Thematisiert werden:
+
+&lt;ul&gt;
+&lt;li&gt;Grundlegendes Schnittmuster für Hoodies&lt;/li&gt;
+&lt;li&gt;Wendekleidung allgemein, wendbare Hoodies&lt;/li&gt;
+&lt;li&gt;versteckte Taschen&lt;/li&gt;
+&lt;li&gt;Ohren, Augen, usw. an der Kapuze annähen&lt;/li&gt;
+&lt;li&gt;Flügel&lt;/li&gt;
+&lt;/ul&gt;
+
+...wer also schon immer mal einen warmen, kuscheligen Wendehoodie haben oder  seinen langweiligen grauen Hoodie in eine Katze oder einen Gameboy verwandeln wollte, ist hier genau richtig ;)
+
+Für Tier-Hoodies bietet es sich an, den selben Hoodie zwei Mal zu kaufen und aus dem einen dann die Erweiterungen zu nähen, damit alles aus dem selben Stoff ist. Es sieht dann alles aus wie aus einem Stück und ihr müsst nicht einen kompletten Hoodie nähen.
+
+Wer einen normalen Hoodie nähen möchte, bringt am besten eigenen Stoff mit. Für einen einlagigen Hoodie oder sehr warmen Wendehoodie eignet sich Sweat-Stoff, aber auch Jersey ist möglich. Für den Wendehoodie benötigt ihr außerdem einen wendbaren Reißverschluss.",
+                    "persons": [
+                        {"id": "3921",  "full_public_name": "jiska"}
                     ],
                     "links": [
                     ]
                   },
                   {
                     "id": "5202",
-                    "start": "17:13",
+                    "start": "20:23",
                     "duration": "02:00",
                     "room": "Gate 105 (Workshop Airlines)",
-                    "slug": "gate_105_workshop_airlines_-_2013-09-07_17:13_-_hacklace_lotworkshop_-_muzy_-_5202",
+                    "slug": "gate_105_workshop_airlines_-_2013-09-07_20:23_-_hacklace_lotworkshop_-_muzy_-_5202",
                     "title": "Hacklace Lötworkshop",
                     "subtitle": "Wir löten ein blinkendes Schmuckstück",
                     "track": "",
@@ -625,10 +753,10 @@ Note for English speakers: Even though this workshop is delivered in German we c
                   },
                   {
                     "id": "5201",
-                    "start": "19:13",
+                    "start": "22:23",
                     "duration": "02:00",
                     "room": "Gate 105 (Workshop Airlines)",
-                    "slug": "gate_105_workshop_airlines_-_2013-09-07_19:13_-_let_s_blink_-_muzy_-_5201",
+                    "slug": "gate_105_workshop_airlines_-_2013-09-07_22:23_-_let_s_blink_-_muzy_-_5201",
                     "title": "Let&#x27;s blink ",
                     "subtitle": "SMD-Lötlern Workshop mit dem RZLblink",
                     "track": "",
@@ -659,6 +787,25 @@ Note for English speakers: Even though this workshop is delivered in German we c
             "rooms": {
               "Gate 104": [
                   {
+                    "id": "5209",
+                    "start": "11:23",
+                    "duration": "00:50",
+                    "room": "Gate 104",
+                    "slug": "gate_104_-_2013-09-08_11:23_-_hacking_medical_devices_-_flo_-_5209",
+                    "title": "Hacking Medical Devices",
+                    "subtitle": "",
+                    "track": "Web und IT-Security",
+                    "type": "lecture",
+                    "language": "de",
+                    "abstract": "In den letzten Jahren sind immer mehr technologisch hochentwickelte medizinische Geräte auf den Markt gekommen. Diese Geräte haben mittlerweile vielfältige Kommunikationsmöglichkeiten. Wir befassen uns in einem Forschungsprojekt mit der Sicherheit dieser Geräte und werden den Stand unserer Arbeit in diesem Vortrag präsentieren.",
+                    "description": "",
+                    "persons": [
+                        {"id": "3993",  "full_public_name": "flo"}
+                    ],
+                    "links": [
+                    ]
+                  },
+                  {
                     "id": "5168",
                     "start": "12:23",
                     "duration": "00:50",
@@ -680,34 +827,11 @@ Note for English speakers: Even though this workshop is delivered in German we c
                     ]
                   },
                   {
-                    "id": "5173",
+                    "id": "5191",
                     "start": "13:23",
                     "duration": "00:50",
                     "room": "Gate 104",
-                    "slug": "gate_104_-_2013-09-08_13:23_-_proximax_telex_flashproxy_oder_tor_bridges_-_qbi_-_5173",
-                    "title": "Proximax, Telex, Flashproxy oder Tor Bridges",
-                    "subtitle": "Übersicht über aktuelle Zensurumgehungssoftware",
-                    "track": "Web und IT-Security",
-                    "type": "lecture",
-                    "language": "de",
-                    "abstract": "Zensur im Internet betrifft immer mehr Nutzer. Wir kennen Tools wie Proxies, VPNs oder Tor Bridges. Doch welche weiteren Werkzeuge unterstützen die Nutzer vor Ort? Wo sind die Stärken und Schwächen? Der Vortrag stellt einige von diesen vor und zeigt die Stärken und Schwächen.",
-                    "description": "Der Vortrag versucht, einen Überblick über die öffentlich verfügbaren Zensurumgehungswerkzeuge zu geben und diese zu bewerten. Zu Anfang werden kurz mögliche, eher nichttechnische Wege angesprochen. Dann folgt eine Betrachtung von Haystack und Ultrasurf. Insbesondere gehe ich auf die spezifischen Fehler dieser Projekte ein. Einen ähnlichen Ansatz wie die beiden anderen Projekte verfolgt Psiphon. Die verschiedenen Versionen der Software werden kurz vorgestellt.
-
-Später werde ich auf das Konzept der Tor Bridges eingehen. Dies ist wichtig, denn für diverse weitere Dienste ist dies die Grundlage. Insbesondere Proximax und die Flashproxies haben einen Bezug zu den Bridges. Telex.cc stellt den Abschluss der Erklärungen dar.
-
-Der Vortrag stellt die Funktionsweise der diversen Dienste vor und erklärt, wo Stärken und Schwächen liegen. Ich würde mir erhoffen, dass der Vortrag für weitere neue Ansätze oder Verbesserungen der bestehenden Software dient.",
-                    "persons": [
-                        {"id": "2402",  "full_public_name": "qbi"}
-                    ],
-                    "links": [
-                    ]
-                  },
-                  {
-                    "id": "5191",
-                    "start": "14:23",
-                    "duration": "00:50",
-                    "room": "Gate 104",
-                    "slug": "gate_104_-_2013-09-08_14:23_-_new_security_concepts_in_gnome_-_tobias_mueller_-_5191",
+                    "slug": "gate_104_-_2013-09-08_13:23_-_new_security_concepts_in_gnome_-_stef_walter_-_tobias_mueller_-_5191",
                     "title": "New Security Concepts in GNOME",
                     "subtitle": "More secure with less “security”",
                     "track": "Open Source Entwicklung",
@@ -730,36 +854,41 @@ We’ll also highlight some of the infrastructure work that’s been done simpli
 
 ",
                     "persons": [
+                        {"id": "4005",  "full_public_name": "Stef Walter"},
                         {"id": "3980",  "full_public_name": "Tobias Mueller"}
                     ],
                     "links": [
                     ]
                   },
                   {
-                    "id": "5146",
-                    "start": "15:23",
+                    "id": "5173",
+                    "start": "14:23",
                     "duration": "00:50",
                     "room": "Gate 104",
-                    "slug": "gate_104_-_2013-09-08_15:23_-_train_realtime_data_protocol_-_ollo_-_5146",
-                    "title": "Train Realtime Data Protocol",
-                    "subtitle": "Netzwerkprotokoll zur Zug-internen Kommunikation",
-                    "track": "Sicherheit von Infrastruktur",
+                    "slug": "gate_104_-_2013-09-08_14:23_-_proximax_telex_flashproxy_oder_tor_bridges_-_qbi_-_5173",
+                    "title": "Proximax, Telex, Flashproxy oder Tor Bridges",
+                    "subtitle": "Übersicht über aktuelle Zensurumgehungssoftware",
+                    "track": "Web und IT-Security",
                     "type": "lecture",
                     "language": "de",
-                    "abstract": "",
-                    "description": "",
+                    "abstract": "Zensur im Internet betrifft immer mehr Nutzer. Wir kennen Tools wie Proxies, VPNs oder Tor Bridges. Doch welche weiteren Werkzeuge unterstützen die Nutzer vor Ort? Wo sind die Stärken und Schwächen? Der Vortrag stellt einige von diesen vor und zeigt die Stärken und Schwächen.",
+                    "description": "Der Vortrag versucht, einen Überblick über die öffentlich verfügbaren Zensurumgehungswerkzeuge zu geben und diese zu bewerten. Zu Anfang werden kurz mögliche, eher nichttechnische Wege angesprochen. Dann folgt eine Betrachtung von Haystack und Ultrasurf. Insbesondere gehe ich auf die spezifischen Fehler dieser Projekte ein. Einen ähnlichen Ansatz wie die beiden anderen Projekte verfolgt Psiphon. Die verschiedenen Versionen der Software werden kurz vorgestellt.
+
+Später werde ich auf das Konzept der Tor Bridges eingehen. Dies ist wichtig, denn für diverse weitere Dienste ist dies die Grundlage. Insbesondere Proximax und die Flashproxies haben einen Bezug zu den Bridges. Telex.cc stellt den Abschluss der Erklärungen dar.
+
+Der Vortrag stellt die Funktionsweise der diversen Dienste vor und erklärt, wo Stärken und Schwächen liegen. Ich würde mir erhoffen, dass der Vortrag für weitere neue Ansätze oder Verbesserungen der bestehenden Software dient.",
                     "persons": [
-                        {"id": "2422",  "full_public_name": "Ollo"}
+                        {"id": "2402",  "full_public_name": "qbi"}
                     ],
                     "links": [
                     ]
                   },
                   {
                     "id": "5198",
-                    "start": "16:23",
+                    "start": "15:23",
                     "duration": "00:50",
                     "room": "Gate 104",
-                    "slug": "gate_104_-_2013-09-08_16:23_-_mrmcd2013_brace_for_impact_-_unicorn_-_5198",
+                    "slug": "gate_104_-_2013-09-08_15:23_-_mrmcd2013_brace_for_impact_-_unicorn_-_5198",
                     "title": "MRMCD2013: Brace for Impact",
                     "subtitle": "",
                     "track": "Luftfahrt",

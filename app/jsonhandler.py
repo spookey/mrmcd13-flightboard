@@ -2,7 +2,8 @@
 
 import os, json, re
 from time import time
-from urllib2 import urlopen
+from urllib2 import urlopen, HTTPError, URLError
+from httplib import HTTPException
 from app import app
 from loghandler import logger
 from config import *
@@ -11,7 +12,7 @@ def get_json():
     if (timestamp()/60 - frab_feed_refresh_span) >= app.last_refresh:
         load_remote()
         app.last_refresh = timestamp()
-        logger.info('local json file refreshed')
+        logger.info('json refresh span reset')
     return load_local()
 
 def timestamp():
@@ -21,21 +22,21 @@ def web_scrape(url):
     try:
         response = urlopen(url)
         return response.read()
-    except (urllib2.HTTPError, urllib2.URLError, httplib.HTTPException, Exception) as e:
+    except (HTTPError, URLError, HTTPException, Exception) as e:
         logger.error('could not download %s ~ %s' %(url, e))
 
 def load_remote():
-    with open(local_frab_feed, 'w') as f:
-        content = web_scrape(remote_frab_feed)
-        if content is not None:
-            try:
+    content = web_scrape(remote_frab_feed)
+    if content is not None:
+        try:
+            with open(local_frab_feed, 'w') as f:
                 f.write(content)
-            except Exception as e:
-                logger.error('could not save json ~ %s' %(e))
-            else:
-                logger.info('json file sucessfully written')
+        except Exception as e:
+            logger.error('could not save json ~ %s' %(e))
         else:
-            logger.error('json scrape failed ~ %s' %(e))
+            logger.info('json file sucessfully written')
+    else:
+        logger.error('json scrape failed ~ %s' %(remote_frab_feed))
 
 def load_local(filename=local_frab_feed):
     if os.path.exists(filename):

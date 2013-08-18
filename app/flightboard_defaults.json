@@ -15,7 +15,7 @@
         ],
         "lettersImage": "static/img/flightBoardMingrayMonoRegular.png",
         "pause": 10000,
-        "lettersSeq": " ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_.:,;#+~*?!(){}[]/\\\\&%|<>",
+        "lettersSeq": " ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_.:,;#+~*?!(){}[]/\\&%|<>",
         "speed": 150,
         "flips": [
             7,
