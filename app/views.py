@@ -8,7 +8,7 @@ from service import *
 from app import app
 
 servicefunctions = {
-            'get_day_number': get_day_number(),
+            'date_display': date_display(),
         }
 app.jinja_env.globals.update(servicefunctions = servicefunctions)
 
@@ -20,7 +20,7 @@ def index():
         title = 'Up Next',
     )
 
-globald = {
+testd = {
         'time': {
             'messages': ['23:42'],
             'maxLength': 8,
@@ -47,8 +47,15 @@ def test():
 
 @app.route('/content')
 def content():
-    globald.update(load_local(flightboard_defaults))
-    return jsonify(globald)
+    testd.update(load_local(flightboard_defaults))
+    return jsonify(testd)
+
+@app.route('/test_content')
+def test_content():
+    data = schedule()
+    data.update(load_local(flightboard_defaults))
+    return jsonify(data)
+
 
 @app.route('/favicon.ico')
 def favicon():

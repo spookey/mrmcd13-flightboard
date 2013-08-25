@@ -73,6 +73,7 @@ footer {
     background-color: black;
     color: white;
     position: fixed;
+    display: block;
     bottom: 0;
     width: 100%;
     text-align: center;

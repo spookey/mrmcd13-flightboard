@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
 
-{% if content %}{{ content }}{% endif %}
+{% if content %}{{ content | safe }}{% endif %}
 
 {% endblock %}

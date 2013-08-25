@@ -111,14 +111,36 @@ What will attendees gain from the presentation?
                     "room": "Gate 104",
                     "slug": "gate_104_-_2013-09-06_21:23_-_torservers_net_-_mo_-_5199",
                     "title": "Torservers.net",
-                    "subtitle": "",
+                    "subtitle": "Geschichten über den Betrieb von Tor Exit Relays",
                     "track": "Web und IT-Security",
                     "type": "lecture",
                     "language": "de",
-                    "abstract": "",
+                    "abstract": "Torservers.net startete 2010, und ist inzwischen das größte Netzwerk an Organisationen, die Tor Exit Relays betreiben.",
                     "description": "",
                     "persons": [
                         {"id": "2633",  "full_public_name": "mo"}
+                    ],
+                    "links": [
+                        {"url": "https://www.torservers.net/", "title": "Torservers.net"}
+                    ]
+                  },
+                  {
+                    "id": "5241",
+                    "start": "22:23",
+                    "duration": "00:50",
+                    "room": "Gate 104",
+                    "slug": "gate_104_-_2013-09-06_22:23_-_statistische_fallen_steller_-_khamacher_-_5241",
+                    "title": "Statistische Fallen(steller)",
+                    "subtitle": "",
+                    "track": "Anonymität im Real Life und außerhalb des Internets",
+                    "type": "lecture",
+                    "language": "de",
+                    "abstract": "Computerspiele führen zu Amokläufen? Vorratsdatenspeicherung &amp; Co sind Werkzeuge für &quot;Precrime&quot;? Päpste sind auch nur Menschen?",
+                    "description": "Mit Statistik und daraus abgeleiteten Aussagen läßt sich viel &quot;argumentieren&quot; - auch und gerade im Bereich der Netze, Sicherheit und Überwachung.
+
+Wie wir schon durch die linguistische Analyse des Neusprechs wissen, kann man mit geschickter Sprache viel manipulieren. Dieser Talk soll komplementär dazu zeigen, welche Manipulationen bzw. welche Fehler in der (öffentlichen) Diskussion bei empirischen Daten und ihrer statistischen Auswertung gemacht werden. Es liegt dabei im Auge des Betrachters, ob die Fehler intendiert sind oder nur aus Unkenntnis gemacht werden... ",
+                    "persons": [
+                        {"id": "2333",  "full_public_name": "khamacher"}
                     ],
                     "links": [
                     ]
@@ -126,21 +148,89 @@ What will attendees gain from the presentation?
               ],
               "Gate 111": [
                   {
-                    "id": "5171",
+                    "id": "5181",
                     "start": "19:23",
                     "duration": "00:50",
                     "room": "Gate 111",
-                    "slug": "gate_111_-_2013-09-06_19:23_-_open_data_in_deutschland_-_claudia_schwegmann_-_5171",
-                    "title": "Open Data in Deutschland",
-                    "subtitle": "Eine Übersicht zur politischen Situation in Deutschland, zum internaltionalen Kontext und zu konkreten Projekten",
-                    "track": "Hack the planet",
+                    "slug": "gate_111_-_2013-09-06_19:23_-_ipsec_how_to_use_vpn_with_enterprise_hardware_-_progamler_-_5181",
+                    "title": "IPSEC How to use VPN with Enterprise Hardware",
+                    "subtitle": "",
+                    "track": "Web und IT-Security",
                     "type": "lecture",
                     "language": "de",
-                    "abstract": "In diesem Vortrag wird der Stand der Open Data Bewegung in Deutschland vorgestellt: die rechtliche Situation, der bisherige politische Prozess und sowie der gegenwärtige Stand der Open Data Umsetzung durch staatlicher Behörden oder zivilgesellschaftlicher Initiativen. Um eine Einschätzung der Situation in Deutschland zu erleichtern werden auch Entwicklungen im internationalen Kontext kurz beschrieben.",
-                    "description": "Die Open Knowledge Foundation Deutschland engagiert sich seit Jahren für Open Data in Deutschland. Im Gegensatz zu vielen anderen westlichen Ländern ist Open Data in Deutschland jedoch immer noch in den Kinderschuhen. Open Data steht nicht hoch auf der politischen Agenda und die konkreten Umsetzungen auf kommunaler, Landes- oder Bundesebene sind rar. 
-Schwerpunkt des Vortrags ist ein Überblick über den aktuellen Stand von Open Data in Deutschland (rechtlich, politisch, Projekte). Die Situation in Deutschland wird dabei punktuell mit Entwicklungen im internationalen Kontext verglichen. Um eine Vorstellung zu den Anwendungsfeldern von Open Data zu geben, werden einige konkrete Projekte von Behörden und von der Open Knowledge Foundation vorgestellt. Abschließend werden die Forderungen der Netz Community zur Weiterentwicklung von Open Data in Deutschland zur Diskussion gestellt. ",
+                    "abstract": "In dem Vortrag werden Grundlagen von IPSEC erklaert",
+                    "description": "Geschichte
+
+    Standards
+        rfc2401 Security Architecture for the Internet Protocol (November 1998)
+        rfc2402 IP Authentication Header (November 1998)
+        rfc2403 The Use of HMAC-MD5-96 within ESP and AH (November 1998 )
+        rfc2405 The Use of HMAC-SHA-1-96 within ESP and AH (November 1998 )
+        rfc2406 IP Encapsulating Security Payload (ESP) (November 1998 )
+        rfc2408 Internet Security Association and Key Management Protocol (ISAKMP) (November 1998 )
+        rfc2409 The Internet Key Exchange (IKE) (November 1998 )
+        rfc2412 The OAKLEY Key Determination Protocol (November 1998 )
+    Funktionen
+        Encryption of user data for privacy.
+        Authentication of the integrity of a message to ensure that it is not changed en route.
+        Protection against certain types of security attacks, such as replay attacks.
+        The ability for devices to negotiate the security algorithms and keys required to meet their security needs.
+        Two security modes, tunnel and transport, to meet different network needs.
+
+Übliche Umsetzung
+
+    Site-to-Site
+        192.168.1.0/24 &lt;-&gt; 172.16.0.0/16
+        192.168.1.0/24 &lt;-&gt; 0.0.0.0/0
+        192.168.1.0/24 &lt;-&gt; 31.172.42.0/24
+    Site-to-Client
+        0.0.0.0/0 &lt;-&gt; 192.168.1.23/32
+        172.16.0.0/12 &lt;-&gt; 192.168.1.42/32
+        31.172.42.0/24 &lt;-&gt; 192.168.1.42/32
+    Server-to-Client
+        172.16.23.42/32 &lt;-&gt; 192.168.1.54/32
+        31.172.42.85/32 &lt;-&gt; 192.168.1.54/32
+    Server-to-Server
+        172.16.23.42/32 &lt;-&gt; 10.42.23.54/32
+        31.172.42.85/32 &lt;-&gt; 195.160.168.28/32
+
+Modes
+
+    Tunnel
+
+        Im Tunnelmodus wird das ursprüngliche Paket gekapselt und die Sicherheitsdienste von IPsec auf das gesamte Paket angewandt. Der neue (äußere) IP-Header dient dazu, die Tunnelenden (also die kryptografischen Endpunkte) zu adressieren, während die Adressen der eigentlichen Kommunikationsendpunkte im inneren IP-Header stehen. Der ursprüngliche (innere) IP-Header stellt für Router usw. auf dem Weg zwischen den Tunnelenden nur Nutzlast (Payload) dar und wird erst wieder verwendet, wenn das empfangende Security-Gateway (das Tunnelende auf der Empfangsseite) die IP-Kapselung entfernt hat und das Paket dem eigentlichen Empfänger zustellt.
+
+        Im Tunnelmodus sind Gateway-zu-Gateway- oder auch Peer-zu-Gateway-Verbindungen möglich. Da an jeweils einer Seite Tunnelende und Kommunikationsendpunkt auf demselben Rechner zusammenfallen können, sind auch im Tunnelmodus Peer-zu-Peer-Verbindungen möglich. Ein Vorteil des Tunnelmodus ist, dass bei der Gateway-zu-Gateway-Verbindung nur in die Gateways (Tunnelenden) IPsec implementiert und konfiguriert werden muss. Angreifer können dadurch nur die Tunnelendpunkte des IPsec-Tunnels feststellen, nicht aber den gesamten Weg der Verbindung.
+        Gliffy 
+    Transport
+        Im Transportmodus wird der IPsec-Header zwischen dem IP-Header und den Nutzdaten eingefügt. Der IP-Header bleibt unverändert und dient weiterhin zum Routing des Pakets vom Sender zum Empfänger. Der Transportmodus wird verwendet, wenn die „kryptographischen Endpunkte“ auch die „Kommunikations-Endpunkte“ sind. Nach dem Empfang des IPsec-Paketes werden die ursprünglichen Nutzdaten (TCP/UDP-Pakete) ausgepackt und an die höherliegende Schicht weitergegeben. Der Transportmodus wird vor allem für Host-zu-Host- oder Host-zu-Router-Verbindungen verwendet, z.B. für die Netzwerkverwaltung.
+    ESP
+        Encapsulating Security Payload (ESP) stellt Mechanismen zur Sicherstellung der Authentizität, Integrität und Vertraulichkeit der übertragenen IP-Pakete bereit. Im Unterschied zum AH wird der Kopf des IP-Paketes vom ICV (Integrity check value) nicht berücksichtigt, jedoch werden die Nutzdaten verschlüsselt übertragen. ESP basiert direkt auf IP und verwendet die IP-Protokoll Nummer 50.
+    AH
+        Der Authentication Header (AH) soll die Authentizität und Integrität der übertragenen Pakete sicherstellen und den Sender authentisieren. Weiterhin schützt er gegen Replay-Angriffe. AH schützt die invarianten Teile eines IP-Datagramms; IP-Header-Felder, die auf dem Weg durch ein IP-Netz von Routern verändert werden können (z. B. TTL), werden nicht berücksichtigt. Werden auf dem Weg durch das Netz Router mit aktivierter Network Address Translation (NAT) passiert, so ändern diese die eigentlich invarianten Teile eines IP-Datagramms ab, folglich ist eine Authentisierung nicht mehr möglich - NAT und AH sind folglich designbedingt inkompatibel - lediglich eine Kombination von NAT und ESP (siehe RFC 3948 – UDP Encapsulation of IPsec ESP Packets) ist möglich. Die Nutzdaten werden bei AH nicht verschlüsselt und sind damit für jeden lesbar. AH basiert direkt auf IP und verwendet die IP-Protokoll Nummer 51.
+
+Umsetzung
+
+    Policy-Based
+        Kompatibel zu fast allen Geräten, genaue Beschreibung wer mit wem reden darf
+        Src-IP,Dst-IP,Dst-Port
+        192.168.1.25, 172.16.25.42, 3306
+    Route-based
+        Es gibt ein interface auf das geroutet wird, erlaubt ist alles im Tunnnel und kann durch uebliche Instrumente wie Firewalls/Access-Listen eingeschraenkt werden
+        0.0.0.0/0, 0.0.0.0/0, Any
+
+Crypto
+
+    des
+    3des
+    aes128
+    aes256
+
+Config exampels
+IPSEC (linux, juniper, netgear, fritzbox)
+IPSEC+GRE",
                     "persons": [
-                        {"id": "3951",  "full_public_name": "Claudia Schwegmann"}
+                        {"id": "3964",  "full_public_name": "proGamler"}
                     ],
                     "links": [
                     ]
@@ -258,10 +348,14 @@ Da das Nähen sehr individuell ist und das Ausmessen und Anpassen  zeitaufwendig
                     "type": "lightning_talk",
                     "language": "de",
                     "abstract": "“In the future, everyone will be world-famous for 15 minutes.” (nach Andy Warhol)",
-                    "description": "Du hast ein cooles Projekt, dass du der Welt vorstellen willst? Hier hast du die Chance es in 10 Minuten zu zeigen.",
+                    "description": "Du hast ein cooles Projekt, dass du der Welt vorstellen willst? Hier hast du die Chance es in 10 Minuten zu zeigen.
+
+Trag dich im Wiki ein, wenn du auch was zu sagen hast:
+http://mrmcd.net/wiki/kurzstreckenfluege_a.k.a_lightning_talks",
                     "persons": [
                     ],
                     "links": [
+                        {"url": "http://mrmcd.net/wiki/kurzstreckenfluege_a.k.a_lightning_talks", "title": "Wikiseite zur Anmeldung"}
                     ]
                   },
                   {
@@ -284,45 +378,17 @@ Da das Nähen sehr individuell ist und das Ausmessen und Anpassen  zeitaufwendig
                     ]
                   },
                   {
-                    "id": "5162",
+                    "id": "5145",
                     "start": "13:23",
                     "duration": "00:50",
                     "room": "Gate 104",
-                    "slug": "gate_104_-_2013-09-07_13:23_-_prism_break_the_value_of_online_identities_-_frank_ackermann_-_5162",
-                    "title": "Prism Break – the value of online identities",
-                    "subtitle": "(de) or",
-                    "track": "Anonymität im Real Life und außerhalb des Internets",
-                    "type": "lecture",
-                    "language": "en",
-                    "abstract": "Online opinion making, blogging and journalism have developed to a
-considerable market potential and source of revenue. With that online
-identities have themselves become a valuable asset to possess – and thus target for theft and fraud. At the same time internet users willingly share detailed private data on social platforms, resulting in
-in-depth-profiling and potential misuse.
-This non-technical talk illustrates in an easily comprehensible way the value of online identities in our modern internet relying society. It
-explains how information is processed, used and analyzed by internet platforms and how this opens vulnerabilities or fraudulent misuse.
-Finally the talk supports the audience at reaching a better evaluation
-of #Neuland&#x27;s territory in which Prism, search-engines, clouds and big data exists next door.
-
-(Anmerkung: In Rücksprache mit den Anwesenden kann der Vortrag natürlich auch in Deutsch stattfinden ;-)",
-                    "description": "",
-                    "persons": [
-                        {"id": "3939",  "full_public_name": "Frank Ackermann"}
-                    ],
-                    "links": [
-                    ]
-                  },
-                  {
-                    "id": "5145",
-                    "start": "14:23",
-                    "duration": "00:50",
-                    "room": "Gate 104",
-                    "slug": "gate_104_-_2013-09-07_14:23_-_quantify_the_world_-_tiefpunkt_-_5145",
+                    "slug": "gate_104_-_2013-09-07_13:23_-_quantify_the_world_-_tiefpunkt_-_5145",
                     "title": "Quantify the World",
-                    "subtitle": "",
+                    "subtitle": "You want some measurements with that?",
                     "track": "Hack the planet",
                     "type": "lecture",
                     "language": "de",
-                    "abstract": "",
+                    "abstract": " Irgendwas über Sensoren, Daten, und was man damit so tun kann.",
                     "description": "",
                     "persons": [
                         {"id": "3920",  "full_public_name": "tiefpunkt"}
@@ -331,11 +397,51 @@ of #Neuland&#x27;s territory in which Prism, search-engines, clouds and big data
                     ]
                   },
                   {
-                    "id": "5182",
+                    "id": "5171",
+                    "start": "14:23",
+                    "duration": "00:50",
+                    "room": "Gate 104",
+                    "slug": "gate_104_-_2013-09-07_14:23_-_open_data_in_deutschland_-_claudia_schwegmann_-_5171",
+                    "title": "Open Data in Deutschland",
+                    "subtitle": "Eine Übersicht zur politischen Situation in Deutschland, zum internaltionalen Kontext und zu konkreten Projekten",
+                    "track": "Hack the planet",
+                    "type": "lecture",
+                    "language": "de",
+                    "abstract": "In diesem Vortrag wird der Stand der Open Data Bewegung in Deutschland vorgestellt: die rechtliche Situation, der bisherige politische Prozess und sowie der gegenwärtige Stand der Open Data Umsetzung durch staatlicher Behörden oder zivilgesellschaftlicher Initiativen. Um eine Einschätzung der Situation in Deutschland zu erleichtern werden auch Entwicklungen im internationalen Kontext kurz beschrieben.",
+                    "description": "Die Open Knowledge Foundation Deutschland engagiert sich seit Jahren für Open Data in Deutschland. Im Gegensatz zu vielen anderen westlichen Ländern ist Open Data in Deutschland jedoch immer noch in den Kinderschuhen. Open Data steht nicht hoch auf der politischen Agenda und die konkreten Umsetzungen auf kommunaler, Landes- oder Bundesebene sind rar. 
+Schwerpunkt des Vortrags ist ein Überblick über den aktuellen Stand von Open Data in Deutschland (rechtlich, politisch, Projekte). Die Situation in Deutschland wird dabei punktuell mit Entwicklungen im internationalen Kontext verglichen. Um eine Vorstellung zu den Anwendungsfeldern von Open Data zu geben, werden einige konkrete Projekte von Behörden und von der Open Knowledge Foundation vorgestellt. Abschließend werden die Forderungen der Netz Community zur Weiterentwicklung von Open Data in Deutschland zur Diskussion gestellt. ",
+                    "persons": [
+                        {"id": "3951",  "full_public_name": "Claudia Schwegmann"}
+                    ],
+                    "links": [
+                    ]
+                  },
+                  {
+                    "id": "5238",
                     "start": "15:23",
                     "duration": "00:50",
                     "room": "Gate 104",
-                    "slug": "gate_104_-_2013-09-07_15:23_-_gigapix_gigaproblems_-_nuit_-_5182",
+                    "slug": "gate_104_-_2013-09-07_15:23_-_scheitern_auf_hohem_niveau_warum_du_als_hacker_auf_jeden_keinen_fall_ein_startup_joinen_solltest_-_mntmn_-_5238",
+                    "title": "Scheitern auf hohem Niveau: Warum du als Hacker auf jeden/keinen Fall ein Startup joinen solltest",
+                    "subtitle": "(Was ich bei aka-aki lernte)",
+                    "track": "Hack the planet",
+                    "type": "lecture",
+                    "language": "",
+                    "abstract": "Aka-aki, gegründet 2007 von ein paar Studenten, millionenfinanziert, eins der ersten mobilen Social Networks mit über 700.000 Nutzern, am Ende grandios gescheitert: was war da los? Learnings aus der Perspektive eines Programmierers, der es von Anfang an mit aufbaute, und warum man es sich gut überlegen sollte, irgendwo für eine Beteiligung mitzuarbeiten.",
+                    "description": "",
+                    "persons": [
+                        {"id": "3977",  "full_public_name": "mntmn"}
+                    ],
+                    "links": [
+                        {"url": "http://www.spiegel.de/netzwelt/web/gescheitertes-start-up-der-tiefe-fall-von-aka-aki-a-887134.html", "title": "SPON: Aufstieg und Fall eines Start-ups: Am Boom gescheitert"}
+                    ]
+                  },
+                  {
+                    "id": "5182",
+                    "start": "17:23",
+                    "duration": "00:50",
+                    "room": "Gate 104",
+                    "slug": "gate_104_-_2013-09-07_17:23_-_gigapix_gigaproblems_-_nuit_-_5182",
                     "title": "Gigapix = Gigaproblems?",
                     "subtitle": "",
                     "track": "",
@@ -345,94 +451,6 @@ of #Neuland&#x27;s territory in which Prism, search-engines, clouds and big data
                     "description": "",
                     "persons": [
                         {"id": "3458",  "full_public_name": "nuit"}
-                    ],
-                    "links": [
-                    ]
-                  },
-                  {
-                    "id": "5181",
-                    "start": "17:23",
-                    "duration": "00:50",
-                    "room": "Gate 104",
-                    "slug": "gate_104_-_2013-09-07_17:23_-_ipsec_how_to_use_vpn_with_enterprise_hardware_-_progamler_-_5181",
-                    "title": "IPSEC How to use VPN with Enterprise Hardware",
-                    "subtitle": "",
-                    "track": "Web und IT-Security",
-                    "type": "lecture",
-                    "language": "de",
-                    "abstract": "In dem Vortrag werden Grundlagen von IPSEC erklaert",
-                    "description": "Geschichte
-
-    Standards
-        rfc2401 Security Architecture for the Internet Protocol (November 1998)
-        rfc2402 IP Authentication Header (November 1998)
-        rfc2403 The Use of HMAC-MD5-96 within ESP and AH (November 1998 )
-        rfc2405 The Use of HMAC-SHA-1-96 within ESP and AH (November 1998 )
-        rfc2406 IP Encapsulating Security Payload (ESP) (November 1998 )
-        rfc2408 Internet Security Association and Key Management Protocol (ISAKMP) (November 1998 )
-        rfc2409 The Internet Key Exchange (IKE) (November 1998 )
-        rfc2412 The OAKLEY Key Determination Protocol (November 1998 )
-    Funktionen
-        Encryption of user data for privacy.
-        Authentication of the integrity of a message to ensure that it is not changed en route.
-        Protection against certain types of security attacks, such as replay attacks.
-        The ability for devices to negotiate the security algorithms and keys required to meet their security needs.
-        Two security modes, tunnel and transport, to meet different network needs.
-
-Übliche Umsetzung
-
-    Site-to-Site
-        192.168.1.0/24 &lt;-&gt; 172.16.0.0/16
-        192.168.1.0/24 &lt;-&gt; 0.0.0.0/0
-        192.168.1.0/24 &lt;-&gt; 31.172.42.0/24
-    Site-to-Client
-        0.0.0.0/0 &lt;-&gt; 192.168.1.23/32
-        172.16.0.0/12 &lt;-&gt; 192.168.1.42/32
-        31.172.42.0/24 &lt;-&gt; 192.168.1.42/32
-    Server-to-Client
-        172.16.23.42/32 &lt;-&gt; 192.168.1.54/32
-        31.172.42.85/32 &lt;-&gt; 192.168.1.54/32
-    Server-to-Server
-        172.16.23.42/32 &lt;-&gt; 10.42.23.54/32
-        31.172.42.85/32 &lt;-&gt; 195.160.168.28/32
-
-Modes
-
-    Tunnel
-
-        Im Tunnelmodus wird das ursprüngliche Paket gekapselt und die Sicherheitsdienste von IPsec auf das gesamte Paket angewandt. Der neue (äußere) IP-Header dient dazu, die Tunnelenden (also die kryptografischen Endpunkte) zu adressieren, während die Adressen der eigentlichen Kommunikationsendpunkte im inneren IP-Header stehen. Der ursprüngliche (innere) IP-Header stellt für Router usw. auf dem Weg zwischen den Tunnelenden nur Nutzlast (Payload) dar und wird erst wieder verwendet, wenn das empfangende Security-Gateway (das Tunnelende auf der Empfangsseite) die IP-Kapselung entfernt hat und das Paket dem eigentlichen Empfänger zustellt.
-
-        Im Tunnelmodus sind Gateway-zu-Gateway- oder auch Peer-zu-Gateway-Verbindungen möglich. Da an jeweils einer Seite Tunnelende und Kommunikationsendpunkt auf demselben Rechner zusammenfallen können, sind auch im Tunnelmodus Peer-zu-Peer-Verbindungen möglich. Ein Vorteil des Tunnelmodus ist, dass bei der Gateway-zu-Gateway-Verbindung nur in die Gateways (Tunnelenden) IPsec implementiert und konfiguriert werden muss. Angreifer können dadurch nur die Tunnelendpunkte des IPsec-Tunnels feststellen, nicht aber den gesamten Weg der Verbindung.
-        Gliffy 
-    Transport
-        Im Transportmodus wird der IPsec-Header zwischen dem IP-Header und den Nutzdaten eingefügt. Der IP-Header bleibt unverändert und dient weiterhin zum Routing des Pakets vom Sender zum Empfänger. Der Transportmodus wird verwendet, wenn die „kryptographischen Endpunkte“ auch die „Kommunikations-Endpunkte“ sind. Nach dem Empfang des IPsec-Paketes werden die ursprünglichen Nutzdaten (TCP/UDP-Pakete) ausgepackt und an die höherliegende Schicht weitergegeben. Der Transportmodus wird vor allem für Host-zu-Host- oder Host-zu-Router-Verbindungen verwendet, z.B. für die Netzwerkverwaltung.
-    ESP
-        Encapsulating Security Payload (ESP) stellt Mechanismen zur Sicherstellung der Authentizität, Integrität und Vertraulichkeit der übertragenen IP-Pakete bereit. Im Unterschied zum AH wird der Kopf des IP-Paketes vom ICV (Integrity check value) nicht berücksichtigt, jedoch werden die Nutzdaten verschlüsselt übertragen. ESP basiert direkt auf IP und verwendet die IP-Protokoll Nummer 50.
-    AH
-        Der Authentication Header (AH) soll die Authentizität und Integrität der übertragenen Pakete sicherstellen und den Sender authentisieren. Weiterhin schützt er gegen Replay-Angriffe. AH schützt die invarianten Teile eines IP-Datagramms; IP-Header-Felder, die auf dem Weg durch ein IP-Netz von Routern verändert werden können (z. B. TTL), werden nicht berücksichtigt. Werden auf dem Weg durch das Netz Router mit aktivierter Network Address Translation (NAT) passiert, so ändern diese die eigentlich invarianten Teile eines IP-Datagramms ab, folglich ist eine Authentisierung nicht mehr möglich - NAT und AH sind folglich designbedingt inkompatibel - lediglich eine Kombination von NAT und ESP (siehe RFC 3948 – UDP Encapsulation of IPsec ESP Packets) ist möglich. Die Nutzdaten werden bei AH nicht verschlüsselt und sind damit für jeden lesbar. AH basiert direkt auf IP und verwendet die IP-Protokoll Nummer 51.
-
-Umsetzung
-
-    Policy-Based
-        Kompatibel zu fast allen Geräten, genaue Beschreibung wer mit wem reden darf
-        Src-IP,Dst-IP,Dst-Port
-        192.168.1.25, 172.16.25.42, 3306
-    Route-based
-        Es gibt ein interface auf das geroutet wird, erlaubt ist alles im Tunnnel und kann durch uebliche Instrumente wie Firewalls/Access-Listen eingeschraenkt werden
-        0.0.0.0/0, 0.0.0.0/0, Any
-
-Crypto
-
-    des
-    3des
-    aes128
-    aes256
-
-Config exampels
-IPSEC (linux, juniper, netgear, fritzbox)
-IPSEC+GRE",
-                    "persons": [
-                        {"id": "3964",  "full_public_name": "proGamler"}
                     ],
                     "links": [
                     ]
@@ -485,11 +503,31 @@ Diskussion/ Fragen",
                     ]
                   },
                   {
-                    "id": "5151",
+                    "id": "5237",
                     "start": "20:23",
                     "duration": "00:50",
                     "room": "Gate 104",
-                    "slug": "gate_104_-_2013-09-07_20:23_-_drohnendebatte_-_frank_-_5151",
+                    "slug": "gate_104_-_2013-09-07_20:23_-_wie_ich_23andme_debuggte_um_doch_keine_todliche_krankheit_zu_haben_-_mntmn_-_5237",
+                    "title": "Wie ich 23andme debuggte, um doch keine tödliche Krankheit zu haben",
+                    "subtitle": "(und was die Presse daraus machte)",
+                    "track": "Hack the planet",
+                    "type": "lecture",
+                    "language": "de",
+                    "abstract": "Die Geschichte vom Programmierfehler, der 23andme dazu veranlasste, mir die Erbkrankheit LGMD (Gliedergürteldystrophie) zu diagnostizieren. Wie ich den Fehler fand und sich die Presse darauf stürzte.",
+                    "description": "",
+                    "persons": [
+                        {"id": "3977",  "full_public_name": "mntmn"}
+                    ],
+                    "links": [
+                        {"url": "http://www.ctrl-verlust.net/23andme-wie-ich-fur-todkrank-erklart-wurde-und-mich-wieder-gesund-debuggte/", "title": "Original-Blogpost bei ctrl-verlust"}
+                    ]
+                  },
+                  {
+                    "id": "5151",
+                    "start": "21:23",
+                    "duration": "00:50",
+                    "room": "Gate 104",
+                    "slug": "gate_104_-_2013-09-07_21:23_-_drohnendebatte_-_frank_-_5151",
                     "title": "Drohnendebatte",
                     "subtitle": "",
                     "track": "Quadrokopter / Dronen",
@@ -593,7 +631,8 @@ Also, was kommt alles im Workshop dran?
                         {"id": "2929",  "full_public_name": "Herr Urbach"}
                     ],
                     "links": [
-                        {"url": "http://www.rote-hilfe.de/downloads/category/5-broschueren?download=4:bitte-sagen-sie-jetzt-nichts-aussageverweigerung-und-verhoermethoden", "title": "Aussageverweigerung und Verhörmethoden (Rote Hilfe e.V.)"}
+                        {"url": "http://www.rote-hilfe.de/downloads/category/5-broschueren?download=4:bitte-sagen-sie-jetzt-nichts-aussageverweigerung-und-verhoermethoden", "title": "Aussageverweigerung und Verhörmethoden (Rote Hilfe e.V.)"},
+                        {"url": "http://www.gruene-jugend.de/sites/default/files/uploads/demofibel_kl_2.pdf", "title": "Demofibel der Grünen Jugend"}
                     ]
                   },
                   {
@@ -635,6 +674,34 @@ Der Vortrag stellt kurz einige Vorgängertechnologien und deren Probleme vor, er
                     ],
                     "links": [
                     ]
+                  },
+                  {
+                    "id": "5162",
+                    "start": "20:23",
+                    "duration": "00:50",
+                    "room": "Gate 111",
+                    "slug": "gate_111_-_2013-09-07_20:23_-_prism_break_the_value_of_online_identities_-_frank_ackermann_-_5162",
+                    "title": "Prism Break – the value of online identities",
+                    "subtitle": "(de) or",
+                    "track": "Anonymität im Real Life und außerhalb des Internets",
+                    "type": "lecture",
+                    "language": "en",
+                    "abstract": "Online opinion making, blogging and journalism have developed to a
+considerable market potential and source of revenue. With that online
+identities have themselves become a valuable asset to possess – and thus target for theft and fraud. At the same time internet users willingly share detailed private data on social platforms, resulting in
+in-depth-profiling and potential misuse.
+This non-technical talk illustrates in an easily comprehensible way the value of online identities in our modern internet relying society. It
+explains how information is processed, used and analyzed by internet platforms and how this opens vulnerabilities or fraudulent misuse.
+Finally the talk supports the audience at reaching a better evaluation
+of #Neuland&#x27;s territory in which Prism, search-engines, clouds and big data exists next door.
+
+(Anmerkung: In Rücksprache mit den Anwesenden kann der Vortrag natürlich auch in Deutsch stattfinden ;-)",
+                    "description": "",
+                    "persons": [
+                        {"id": "3939",  "full_public_name": "Frank Ackermann"}
+                    ],
+                    "links": [
+                    ]
                   }
               ],
               "Gate 105 (Workshop Airlines)": [
@@ -663,10 +730,10 @@ Natürlich könnt ihr auch eure eigenen Sachen besticken. Gut geeignet sind beis
                   },
                   {
                     "id": "5220",
-                    "start": "13:03",
+                    "start": "13:23",
                     "duration": "01:30",
                     "room": "Gate 105 (Workshop Airlines)",
-                    "slug": "gate_105_workshop_airlines_-_2013-09-07_13:03_-_schneidplotter_und_shirtpresse_-_jiska_-_5220",
+                    "slug": "gate_105_workshop_airlines_-_2013-09-07_13:23_-_schneidplotter_und_shirtpresse_-_jiska_-_5220",
                     "title": "Schneidplotter und Shirtpresse ",
                     "subtitle": "Workshopreihe für Nährdinen und Nährds",
                     "track": "",
@@ -685,6 +752,25 @@ Viele Textilien, die sich nicht für die Stickmaschine eignen, lassen sich trotz
                         {"id": "3921",  "full_public_name": "jiska"}
                     ],
                     "links": [
+                    ]
+                  },
+                  {
+                    "id": "5232",
+                    "start": "15:23",
+                    "duration": "00:50",
+                    "room": "Gate 105 (Workshop Airlines)",
+                    "slug": "gate_105_workshop_airlines_-_2013-09-07_15:23_-_key_signing_party_-_5232",
+                    "title": "Key Signing Party",
+                    "subtitle": "Join &amp; Strengthen the &quot;Web of Trust&quot;",
+                    "track": "Web und IT-Security",
+                    "type": "workshop",
+                    "language": "",
+                    "abstract": "Auf dem MRMCD2013 findet auch eine Key Signing Party statt, auch du kannst mitfliegen!",
+                    "description": "Alle weiteren Infos unter: http://mrmcd.net/wiki/key_signing_party",
+                    "persons": [
+                    ],
+                    "links": [
+                        {"url": "http://mrmcd.net/wiki/key_signing_party", "title": "Alles weitere auf der Wikiseite"}
                     ]
                   },
                   {
@@ -971,6 +1057,43 @@ Weitere Informationen zum Projekt finden sich hier: http://calc.pw/de",
                         {"id": "3862",  "full_public_name": "Kenneth Newwood"}
                     ],
                     "links": [
+                    ]
+                  },
+                  {
+                    "id": "5229",
+                    "start": "14:23",
+                    "duration": "00:50",
+                    "room": "Gate 111",
+                    "slug": "gate_111_-_2013-09-08_14:23_-_towards_physical_layer_sneaker_transport_post_-_nanooq_-_5229",
+                    "title": "Towards &quot;Physical Layer Sneaker Transport&quot; (POST)",
+                    "subtitle": "Using cryptology over your six-degrees-of-separation for sending and receiving physical object to your friends",
+                    "track": "Anonymität im Real Life und außerhalb des Internets",
+                    "type": "lecture",
+                    "language": "en",
+                    "abstract": "The &quot;Physical Layer Sneaker Transport&quot; (POST)-Protocol enables you to send a present to a friend far away by using the world&#x27;s &quot;six-degrees-of-separation&quot;. That&#x27;s right, unpaid people you don&#x27;t know will not steal your present, but deliver it for you: For fun and a better world. How to trust and trace in such an &quot;Ad-hoc Co-presence Aware Bi-work&quot; (ACAB, working title)? This ad-hoc network of two mobile computers (bi-work is a network of two) established for the brief moment when one carrier of your packet identifies the next best carrier closer to your friend, authenticates him, hands the packet over and generates a tracing receipt, is right every hacker&#x27;s dilemma:
+How to identify and trust persons in an ephemeral distributed network in order to do cool stuff together instead of being screwed over?",
+                    "description": "In 2011 &lt;q href=&quot;http://larsipulami.de&quot;&gt;Inj4n&lt;/a&gt; outlined the opportunities of a &quot;Physical Objects Sneaker Transport&quot;-protocol in his academic paper &quot;Evolving Logistics: Physical-Objects Sneaker Transport (POST)&quot;. Subsequent workshops led to his talk &quot;Movement in the other real space — Location based Applications and the spatio-temporal Identity&quot; on the MRMCD 2012. One year later a four-headed &lt;a href=&quot;http://www.wiwi.uni-siegen.de/itsec/lehre/ws-1314/ws13-post-project/index.html?lang=de&quot;&gt;research group&lt;/a&gt; of hackers and computer scientist prototype the environment of this earthling-based transport protocol. 
+
+In a* diploma thesis there is research about identification and authentication parameters needed between two people to establish trust and trace transported physical objects from sender to recipient. While PGP signing might be used for tracing the path of a packet, the underlying trust model seems to point into the known reputation-based social network dilemma: Trust and recognizion seem to be only possible using memorized identification attributes. These attributes are at the same time the fabric the dreams of the governmental intelligences&#x27;, economic marketings&#x27; and surveillance in general are made of. 
+
+While the old-skool of encryption, IT security and cryptology is known to most of the MRMCD2013 audience (PGP, asymmetric signing and encryption, zero-knowledge proofs and the like), direct anonymity assertion (e.g. IDEMIX) might not. Adding to this a list of interesting findings from the fields of evolution biology, anthropology, human behaviour and game theory there might be indeed a &quot;game&quot; of exchanging, sharing and giving away of stuff in anon- and pseudonymity and building up reputation in a distributed off- and online social network.
+
+This presentation will elaborate shortly on these building blocks, put them together to outline the identification and anonymity protocol in POST and show (screen shots at the least) actual implementation of prototypes.
+
+Information concerning setting up a stable or resilient social environment of reciprocal altruism would be awesome: nanooq AT hasi DOT it
+&lt;hl&gt;
+
+* my
+
+Note:
+Since &quot;das ist Deutschland hier!&quot; the talk could also be held in German. And in French.",
+                    "persons": [
+                        {"id": "4014",  "full_public_name": "Nanooq"}
+                    ],
+                    "links": [
+                        {"url": "http://larsipulami.de/papers/fischer_gi2011_post.pdf", "title": "Evolving Logistics: Physical-Objects Sneaker Transport (POST)"},
+                        {"url": "http://larsipulami.de/presentation/2011-agrn-post.pdf", "title": "Evolving Logistics: Physical-Objects Sneaker Transport, Invitation of University Bremen, Faculty 3 - Mathematics/Computer Science, AG Rechnernetze, November 2011"},
+                        {"url": "http://www.wiwi.uni-siegen.de/itsec/lehre/ws-1314/ws13-post-project/index.html?lang=de", "title": "Projekt Physical Objects Sneaker Transport (POST)"}
                     ]
                   }
               ],

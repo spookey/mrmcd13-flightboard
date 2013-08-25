@@ -12,51 +12,52 @@ def mk_datetime(Ymd):
 def format_date(datetimeobj):
     return datetime.strftime(datetimeobj, '%d.%m.%Y')
 
-def get_day_number():
-    json = get_json()
-    content = None
-    if json is not None:
-        content = json['schedule']['conference']['days']
-
-        def _fmt(today=datetime.now(), curday='-1', lastday=content[-1]['index']):
-            return '%s of %s' %(curday, lastday), format_date(today)
-
-        for data in content:
-            if( datetime.now() - mk_datetime(data['date']) >= timedelta(seconds=0)):
-                result = _fmt(mk_datetime(data['date']), data['index'])
-                break;
-            else:
-                result = _fmt(lastday='-1')
-        return result
-
-    return content
+def datetime_now():
+    return datetime.strptime('2013-09-06 13:37', '%Y-%m-%d %H:%M') #debug, change for production!
+    # return datetime.now()
 
 def is_it_conference():
     json = get_json()
     if json is not None:
-        return (mk_datetime(json['schedule']['conference']['start']) <= datetime.now() <= mk_datetime(content['schedule']['conference']['end']))
+        return (mk_datetime(json['schedule']['conference']['start']) <= datetime_now() <= mk_datetime(content['schedule']['conference']['end']))
 
-def schedule():
-    json =  get_json()
-    content = None
+def current_day_number():
+    json = get_json()
+    result = None
     if json is not None:
         content = json['schedule']['conference']['days']
 
-    result = []
+        for data in content:
+            delta = datetime_now() - mk_datetime(data['date'])
+            if( delta >= timedelta(seconds=0) and delta <= timedelta(hours=24) ):
+                result = int(data['index'])
+                break
+    return result
 
-    result.append(datetime.now())
-    result.append('|||')
+def date_display():
+    daynumber = current_day_number()
+    if daynumber is not None:
+        json = get_json()
+        if json is not None:
+            return 'Day %d of %d &mdash; %s' %(int(daynumber), len(json['schedule']['conference']['days'])-1, format_date(datetime_now()))
+    else:
+        return 'No conference &mdash; %s' %(format_date(datetime.now()))
 
-    if content is not None:
-        for d in content:
-            result.append(str(d['date']))
-            result.append(mk_datetime(d['date']))
-            result.append('-->')
-            result.append(mk_datetime(d['date']) - datetime.now())
-            result.append(str(mk_datetime(d['date']) - datetime.now()))
-            result.append('//')
+def schedule():
+    json = get_json()
+    today = current_day_number()
+    result = {}
 
-    result.append('-' * 23)
-    result.append('Today is conference? %s' %(is_it_conference()))
+    if today is not None:
+        if json is not None:
+            content = json['schedule']['conference']['days'][today]['rooms']
 
+            for rooms in content.itervalues():
+                for event in rooms:
+                    result[event['start']] = {
+                        'time': event['start'],
+                        'gate': event['room'],
+                        'flight': event['id'],
+                        'departure': [unicode(event['title']), unicode(event['subtitle'])],
+                    }
     return result
