@@ -1,35 +1,49 @@
 {% extends 'base.html' %}
 {% block content %}
+
+{% if rows is defined and maxrows is defined %}
+    {% if rows <= maxrows %}
+        {% set maxrows = rows %}
+    {% endif %}
+{% if maxrows > 0 %}
+
 <script type="text/javascript">
 
-function getjson(element) {
-    var result = null;
-    $.ajax({
-        'async': false,
-        'global': false,
-        'url': '{{ url_for('content') }}',
-        'dataType': 'json',
-        'success': function(data){ result = data; }
-    });
-    return result[element];
-};
+    function getjson(row, element) {
+        var result = null;
+        $.ajax({
+            'async': false,
+            'global': false,
+            'url': '{{ url_for('content') }}',
+            'dataType': 'json',
+            'success': function(data){ result = data; }
+        });
+        return result[row][element];
+    };
 
-$.flightboard.setDefaults( getjson('defaults') );
+    $.flightboard.setDefaults( getjson('defaults', 'defaults') );
 
-$(function () { $('#time').flightboard( getjson('time') ); });
-setInterval(function(){$('#time').flightboard( getjson('time') ); }, 60000);
+    {% for number in range(maxrows) %}
+        $(function () { $('#time{{ number }}').flightboard( getjson('row{{ number }}', 'time') ); });
+        $(function () { $('#gate{{ number }}').flightboard( getjson('row{{ number }}', 'gate') ); });
+        $(function () { $('#flight{{ number }}').flightboard( getjson('row{{ number }}', 'flight') ); });
+        $(function () { $('#depature{{ number }}').flightboard( getjson('row{{ number }}', 'depature') ); });
+    {% endfor %}
 
-$(function () { $('#depature').flightboard( getjson('depature') ); });
-setInterval(function(){$('#depature').flightboard( getjson('depature') ); }, 60000);
+    function refreshing(upto){
+        var nr = 0;
+        setInterval(function()
+        {
+            $(function () { $('#time' + nr).flightboard('flip', 'next'); });
+            $(function () { $('#gate' + nr).flightboard('flip', 'next'); });
+            $(function () { $('#flight' + nr).flightboard('flip', 'next'); });
+            $(function () { $('#depature' + nr).flightboard('flip', 'next'); });
 
-$(function () { $('#flight').flightboard( getjson('flight') ); });
-setInterval(function(){$('#flight').flightboard( getjson('flight') ); }, 60000);
-
-$(function () { $('#gate').flightboard( getjson('gate') ); });
-setInterval(function(){$('#gate').flightboard( getjson('gate') ); }, 60000);
-
-$(function () { $('#test').flightboard(  ); });
-setInterval(function(){$('#test').flightboard( getjson('test') ); }, 60000);
+            console.log(nr);
+            nr++;
+            if(nr >= upto){ nr = 0; }
+        }, 2000);
+    };
 
 </script>
 
@@ -43,13 +57,22 @@ setInterval(function(){$('#test').flightboard( getjson('test') ); }, 60000);
         </tr>
     </thead>
     <tbody>
+            {% for number in range(maxrows) %}
         <tr>
-            <td class="rowelement" id="time"></td>
-            <td class="rowelement" id="gate"></td>
-            <td class="rowelement" id="flight"></td>
-            <td class="rowelement" id="depature"></td>
+            <td class="rowelement" id="time{{ number }}"></td>
+            <td class="rowelement" id="gate{{ number }}"></td>
+            <td class="rowelement" id="flight{{ number }}"></td>
+            <td class="rowelement" id="depature{{ number }}"></td>
         </tr>
+            {% endfor %}
     </tbody>
 </table>
+
+<script type="text/javascript">
+    refreshing({{maxrows}});
+</script>
+
+{% endif %}
+{% endif %}
 
 {% endblock %}

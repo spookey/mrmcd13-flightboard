@@ -1,7 +1,7 @@
 # -.- coding: utf-8 -.-
 
 from flask import render_template, send_from_directory, flash, jsonify
-from config import dir_static
+from config import dir_static, fb_maxrows
 from loghandler import logger
 from jsonhandler import load_local
 from service import *
@@ -18,44 +18,17 @@ def index():
     logger.info('index requested')
     return render_template('main.html',
         title = 'Up Next',
+        rows = len(schedule()),
+        maxrows = fb_maxrows,
     )
-
-testd = {
-        'time': {
-            'messages': ['23:42'],
-            'maxLength': 8,
-        },
-        'depature': {
-            'messages': ['Biertrinken gegen den Krieg', 'Praktizierter Pazifismus'],
-            'maxLength': 30,
-        },
-        'flight': {
-            'messages': ['2342'],
-            'maxLength': 4,
-        },
-        'gate': {
-            'messages': ['Saal 23', '5. Stock'],
-            'maxLength': 8,
-        },
-}
-
-@app.route('/test')
-def test():
-    return render_template('test.html',
-        content = schedule(),
-        )
 
 @app.route('/content')
 def content():
-    testd.update(load_local(flightboard_defaults))
-    return jsonify(testd)
-
-@app.route('/test_content')
-def test_content():
-    data = schedule()
-    data.update(load_local(flightboard_defaults))
+    data = {}
+    data['defaults'] = load_local(flightboard_defaults)
+    for i, item in enumerate(schedule()):
+        data['row%d' %(i)] = item
     return jsonify(data)
-
 
 @app.route('/favicon.ico')
 def favicon():
@@ -71,5 +44,6 @@ def internal_error(error):
 
 @app.errorhandler(500)
 def internal_error(error):
+    flash('Panic!!1!')
     return render_template('error.html',
         message = 'An unexpected error has occurred'), 500

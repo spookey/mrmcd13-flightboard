@@ -28,22 +28,25 @@
 
 </head>
 <body>
+
     <header>
+
         <img src="static/img/mrmcd13_logo.png" alt="Papierflieger MRMCD2013 SECURITY ADVICE">
         <div id="timebox">
             <span id="clock">23:42</span>
             {% if servicefunctions.date_display is defined %}
-                <div id="day">{{ servicefunctions.date_display | safe }}</div>
+                <div id="day">{{ servicefunctions.date_display|safe }}</div>
             {% endif %}
         </div>
 
         {% with messages = get_flashed_messages() %}
-                {% if messages %}
-        <div id="message">
-            {% for message in messages %}<span>&rarr;&nbsp;{{ message|safe }}</span>{% endfor %}
-        </div>
-                {% endif %}
-            {% endwith %}
+            {% if messages %}
+                <div id="message">
+                    {% for message in messages %}<span>&rarr;&nbsp;{{ message|safe }}</span>{% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+
     </header>
 
     {% block content %}{% endblock %}

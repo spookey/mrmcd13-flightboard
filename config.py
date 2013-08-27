@@ -17,7 +17,9 @@ logfile = os.path.join(basedir, 'up_next.log')
 
 # flightboard
 flightboard_defaults = os.path.join(basedir, 'app/flightboard_defaults.json')
+fb_maxrows = 16
 
 #>>> import os
 #>>> os.urandom(24)
 SECRET_KEY = 'Blafasellaberblubbdozier'
+
