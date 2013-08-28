@@ -18,6 +18,11 @@ logfile = os.path.join(basedir, 'up_next.log')
 # flightboard
 flightboard_defaults = os.path.join(basedir, 'app/flightboard_defaults.json')
 fb_maxrows = 16
+fb_rowupdate = 2000
+fb_time_length = 8
+fb_daparture_length = 30
+fb_flight_length = 4
+fb_gate_length = 8
 
 #>>> import os
 #>>> os.urandom(24)

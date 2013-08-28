@@ -15,15 +15,17 @@ app.jinja_env.globals.update(servicefunctions = servicefunctions)
 @app.route('/')
 @app.route('/index')
 def index():
-    logger.info('index requested')
+    blocklog('index requested')
     return render_template('main.html',
         title = 'Up Next',
         rows = len(schedule()),
         maxrows = fb_maxrows,
+        rowupdate = fb_rowupdate,
     )
 
 @app.route('/content')
 def content():
+    blocklog('content requested')
     data = {}
     data['defaults'] = load_local(flightboard_defaults)
     for i, item in enumerate(schedule()):
@@ -38,12 +40,19 @@ def favicon():
 
 @app.errorhandler(404)
 def internal_error(error):
+    logger.error('Request Error: %s' %(error))
     flash('I checked twice!')
     return render_template('error.html',
         message = 'File not found'), 404
 
 @app.errorhandler(500)
 def internal_error(error):
+    logger.error('Request Error: %s' %(error))
     flash('Panic!!1!')
     return render_template('error.html',
         message = 'An unexpected error has occurred'), 500
+
+def blocklog(msg, char='-'):
+    logger.info(char * len(msg))
+    logger.info(msg)
+    logger.info(char * len(msg))

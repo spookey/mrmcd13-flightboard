@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 
-{% if rows is defined and maxrows is defined %}
+{% if rows is defined and maxrows is defined and rowupdate is defined %}
     {% if rows <= maxrows %}
         {% set maxrows = rows %}
     {% endif %}
@@ -39,10 +39,9 @@
             $(function () { $('#flight' + nr).flightboard('flip', 'next'); });
             $(function () { $('#depature' + nr).flightboard('flip', 'next'); });
 
-            console.log(nr);
             nr++;
             if(nr >= upto){ nr = 0; }
-        }, 2000);
+        }, {{ rowupdate }});
     };
 
 </script>

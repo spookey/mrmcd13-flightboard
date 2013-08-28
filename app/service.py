@@ -5,6 +5,9 @@ from datetime import datetime, timedelta
 from urllib2 import urlopen
 from config import *
 from jsonhandler import get_json
+from loghandler import logger
+from HTMLParser import HTMLParser
+from re import findall
 
 def datetime_from_date(Ymd):
     return datetime.strptime(Ymd, '%Y-%m-%d')
@@ -34,6 +37,7 @@ def current_day_number():
             if( delta >= timedelta(seconds=0) and delta <= timedelta(hours=24) ):
                 result = int(data['index'])
                 break
+    logger.info('today is day %s' %(result))
     return result
 
 def date_display():
@@ -43,11 +47,19 @@ def date_display():
         if json is not None:
             return 'Day %d of %d &mdash; %s' %(int(daynumber), len(json['schedule']['conference']['days'])-1, format_date(datetime_now()))
     else:
+        logger.info('no conference')
         return 'No conference &mdash; %s' %(format_date(datetime.now()))
 
 def schedule():
-    def _strsplit(msg, num=30):
-        return [msg[start:start+num].lstrip().rstrip() for start in range(0, len(msg), num)]
+    def _strconv(msg):
+        for e in findall('&.+?;', msg):
+            unescaped = HTMLParser().unescape(e)
+            msg = msg.replace(e, unescaped)
+        return msg
+
+    def _strsplit(msg, num=fb_daparture_length):
+        result = _strconv(msg)
+        return [result[start:start+num].lstrip().rstrip() for start in range(0, len(result), num)]
 
     json = get_json()
     today = current_day_number()
@@ -63,28 +75,29 @@ def schedule():
 
                         messages = []
                         if not event['subtitle']:
-                            messages = _strsplit(event['title'])
+                            messages = _strsplit(event['title'], fb_daparture_length)
                         else:
-                            messages = _strsplit(event['title']) + _strsplit(event['subtitle'])
+                            messages = _strsplit(event['title'], fb_daparture_length) + _strsplit(event['subtitle'], fb_daparture_length)
 
-                            result.append({
-                                'time': {
-                                    'messages': [event['start']],
-                                    'maxLength': 8,
-                                },
-                                'depature': {
-                                    'messages': messages,
-                                    'maxLength': 30,
-                                },
-                                'flight': {
-                                    'messages': [event['id']],
-                                    'maxLength': 4,
-                                },
-                                'gate': {
-                                    'messages': [event['room']],
-                                    'maxLength': 8,
-                                },
-                            })
+                        result.append({
+                            'time': {
+                                'messages': [event['start']],
+                                'maxLength': fb_time_length,
+                            },
+                            'depature': {
+                                'messages': messages,
+                                'maxLength': fb_daparture_length,
+                            },
+                            'flight': {
+                                'messages': [event['id']],
+                                'maxLength': fb_flight_length,
+                            },
+                            'gate': {
+                                'messages': [event['room']],
+                                'maxLength': fb_gate_length,
+                            },
+                        })
 
             result.sort(key=lambda x: x['time']['messages'])
+            logger.info('schedule ready ~ got %s entries' %(len(result)))
     return result
