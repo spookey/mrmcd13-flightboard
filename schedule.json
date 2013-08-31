@@ -123,27 +123,6 @@ What will attendees gain from the presentation?
                     "links": [
                         {"url": "https://www.torservers.net/", "title": "Torservers.net"}
                     ]
-                  },
-                  {
-                    "id": "5241",
-                    "start": "22:23",
-                    "duration": "00:50",
-                    "room": "Gate 104",
-                    "slug": "gate_104_-_2013-09-06_22:23_-_statistische_fallen_steller_-_khamacher_-_5241",
-                    "title": "Statistische Fallen(steller)",
-                    "subtitle": "",
-                    "track": "Anonymität im Real Life und außerhalb des Internets",
-                    "type": "lecture",
-                    "language": "de",
-                    "abstract": "Computerspiele führen zu Amokläufen? Vorratsdatenspeicherung &amp; Co sind Werkzeuge für &quot;Precrime&quot;? Päpste sind auch nur Menschen?",
-                    "description": "Mit Statistik und daraus abgeleiteten Aussagen läßt sich viel &quot;argumentieren&quot; - auch und gerade im Bereich der Netze, Sicherheit und Überwachung.
-
-Wie wir schon durch die linguistische Analyse des Neusprechs wissen, kann man mit geschickter Sprache viel manipulieren. Dieser Talk soll komplementär dazu zeigen, welche Manipulationen bzw. welche Fehler in der (öffentlichen) Diskussion bei empirischen Daten und ihrer statistischen Auswertung gemacht werden. Es liegt dabei im Auge des Betrachters, ob die Fehler intendiert sind oder nur aus Unkenntnis gemacht werden... ",
-                    "persons": [
-                        {"id": "2333",  "full_public_name": "khamacher"}
-                    ],
-                    "links": [
-                    ]
                   }
               ],
               "Gate 111": [
@@ -298,7 +277,9 @@ Einen kleinen Ausblick auf die Inhalte gibt es bereits im RaumZeitLabor Blog (si
 
 Danach habt ihr die Möglichkeit, einen Kissenbezug zu nähen. Ideal wäre es also, wenn ihr wisst, wie groß eure Kissen zu Hause so sind oder sogar ein Kissen mitbringt. Standardmaße sind 40x40cm und 80x80cm.
 
-Das Kissen könnt ihr im Rahmen der nachfolgenden Workshops noch besticken oder mit flauschiger Flockfolie bedrucken.",
+Das Kissen könnt ihr im Rahmen der nachfolgenden Workshops noch besticken oder mit flauschiger Flockfolie bedrucken.
+
+Materialen in diesem Workshop werden gegen einen kleinen Unkostenbeitrag (ca. 2€) gestellt! Ihr müsst also nichts mitbringen und könnt spontan mitmachen ;)",
                     "persons": [
                         {"id": "3921",  "full_public_name": "jiska"}
                     ],
@@ -321,7 +302,9 @@ Das Kissen könnt ihr im Rahmen der nachfolgenden Workshops noch besticken oder 
 
 Für kleine Größen bekommt ihr gezeigt, wie man daraus optisch mehr machen kann. Für große Größen bekommt ihr gezeigt, wie man ein Ergebnis bekommt, das etwas hält.
 
-Da das Nähen sehr individuell ist und das Ausmessen und Anpassen  zeitaufwendig sind, handelt es sich nur um einen Vortrag, was alles möglich ist, sowie ein paar Ergebnisse zum Anfassen.",
+Da das Nähen sehr individuell ist und das Ausmessen und Anpassen  zeitaufwendig sind, handelt es sich nur um einen Vortrag, was alles möglich ist, sowie ein paar Ergebnisse zum Anfassen. Wenn ihr viel Zeit und etwas Badelycra mitbringt, besteht die Möglichkeit, später am Abend außerhalb des Workshops noch was eigenes zu nähen.
+
+Mehr Infos &lt;a href=&quot;http://nerdine.org/zenphoto/Tetriskleid/Bikini/&quot;&gt;hier&lt;/a&gt;.",
                     "persons": [
                         {"id": "3921",  "full_public_name": "jiska"}
                     ],
@@ -359,22 +342,24 @@ http://mrmcd.net/wiki/kurzstreckenfluege_a.k.a_lightning_talks",
                     ]
                   },
                   {
-                    "id": "5143",
+                    "id": "5267",
                     "start": "12:23",
                     "duration": "00:50",
                     "room": "Gate 104",
-                    "slug": "gate_104_-_2013-09-07_12:23_-_flugzeugtechnik_-_matthias_-_5143",
-                    "title": "Flugzeugtechnik",
-                    "subtitle": "",
+                    "slug": "gate_104_-_2013-09-07_12:23_-_gamejams_-_xandy_-_5267",
+                    "title": "Gamejams",
+                    "subtitle": "In 48 Stunden zum fertigen Spiel",
                     "track": "",
                     "type": "lecture",
-                    "language": "de",
-                    "abstract": "",
+                    "language": "",
+                    "abstract": "
+3 Mal im Jahr entwickeln Programmierer weltweit in nur 48 Stunden über 2000 Spiele zu einem vorgegebenen Thema. Wieso sollte man bei so einem Event mitmachen und wie schafft man es in der kurzen Zeit ein gutes Spiel zu entwickeln? ",
                     "description": "",
                     "persons": [
-                        {"id": "3913",  "full_public_name": "Matthias"}
+                        {"id": "4049",  "full_public_name": "xAndy"}
                     ],
                     "links": [
+                        {"url": "http://www.ludumdare.com/", "title": "Ludum Dare"}
                     ]
                   },
                   {
@@ -441,18 +426,26 @@ Schwerpunkt des Vortrags ist ein Überblick über den aktuellen Stand von Open D
                     "start": "17:23",
                     "duration": "00:50",
                     "room": "Gate 104",
-                    "slug": "gate_104_-_2013-09-07_17:23_-_gigapix_gigaproblems_-_nuit_-_5182",
-                    "title": "Gigapix = Gigaproblems?",
-                    "subtitle": "",
+                    "slug": "gate_104_-_2013-09-07_17:23_-_gp_gp_-_nuit_-_5182",
+                    "title": "GP = GP",
+                    "subtitle": "Die Jagd nach Pixel",
                     "track": "",
                     "type": "lecture",
                     "language": "de",
-                    "abstract": "Ein kurzer Exkurs in die Welt der grossen Panoramen. Was fuer Probleme treten bei Bildern die die 50GP Marke ueberschreiten auf und womit verarbeitet man eigentlich die Datenmenge?",
-                    "description": "",
+                    "abstract": "Software und Hardware Einsatz bei Panoramen, die 50 GP ueberschreiten.",
+                    "description": "Am 6.3 entstand aus einem kleinen Test eines Panoramakopfes ein 4GP Bild. Seitdem sind wir auf der Suche nach noch mehr Pixeln.
+
+Im Juli hatten wir endlich das erforderliche Wetter um unser 300mm Objektiv voll auszunutzen. Doch erreichten wir damit eine Bildgroesse zu der unsere Software und Hardware nur &quot;aeeehm, nope&quot; sagte. 
+
+Rewrites aller Skripte und verbesserte Hardware musste her und vorallem eine Moeglichkeit Bilder vor dem eigentlichen Tiling und nach der Nachbearbeitung anzuschauen.
+ 
+In dem Vortrag soll es um den Aufwand hinter einem Panorama gehen. Mit welcher Hardware wir gegen Waende liefen und an was man in der Nachbearbeitung nicht denken sollte.
+",
                     "persons": [
                         {"id": "3458",  "full_public_name": "nuit"}
                     ],
                     "links": [
+                        {"url": "http://gigapixel-bayreuth.de", "title": "62GP Bayreuth"}
                     ]
                   },
                   {
@@ -714,7 +707,7 @@ of #Neuland&#x27;s territory in which Prism, search-engines, clouds and big data
                     "title": "Einführung Stickmaschine",
                     "subtitle": "Workshopreihe für Nährdinen und Nährds",
                     "track": "",
-                    "type": "",
+                    "type": "workshop",
                     "language": "de",
                     "abstract": "Besticken und Motiverstellung",
                     "description": "In diesem Workshop bekommt ihr eine Einführung darüber, wie eine Stickmaschine funktioniert. Ihr bekommt gezeigt, welche Fäden wofür gedacht sind, welche Textilien sich wie besticken lassen, usw. Außerdem bekommt ihr gezeigt, was bei der Motivwahl zu beachten ist und wie man Stickdateien erstellt.
@@ -797,71 +790,27 @@ Viele Textilien, die sich nicht für die Stickmaschine eignen, lassen sich trotz
 
 ...wer also schon immer mal einen warmen, kuscheligen Wendehoodie haben oder  seinen langweiligen grauen Hoodie in eine Katze oder einen Gameboy verwandeln wollte, ist hier genau richtig ;)
 
+
 Für Tier-Hoodies bietet es sich an, den selben Hoodie zwei Mal zu kaufen und aus dem einen dann die Erweiterungen zu nähen, damit alles aus dem selben Stoff ist. Es sieht dann alles aus wie aus einem Stück und ihr müsst nicht einen kompletten Hoodie nähen.
 
-Wer einen normalen Hoodie nähen möchte, bringt am besten eigenen Stoff mit. Für einen einlagigen Hoodie oder sehr warmen Wendehoodie eignet sich Sweat-Stoff, aber auch Jersey ist möglich. Für den Wendehoodie benötigt ihr außerdem einen wendbaren Reißverschluss.",
+Wer einen normalen Hoodie nähen möchte, bringt am besten eigenen Stoff mit. Für einen einlagigen Hoodie oder sehr warmen Wendehoodie eignet sich Sweat-Stoff, aber auch Jersey ist möglich. Für den Wendehoodie benötigt ihr außerdem einen wendbaren Reißverschluss.
+
+Materialliste (bitte mitbringen):
+
+&lt;ul&gt;
+&lt;li&gt;1,50mx1,60m bis 2mx1,60m Sweatstoff in einer Farbe, z.B. schwarz, je nach Körpergröße (besser mehr)&lt;/li&gt;
+&lt;li&gt;1,50mx1,60m bis 2mx1,60m Sweatstoff in einer anderen Farbe, z.B. blau, grau, rot, grün etc., wenn der Hoodie zum Wenden sein soll. Wenn der Hoodie nicht ganz so warm sein soll, reicht auch ein einfacher Baumwollstoff in einer anderen Farbe. (besser mehr)&lt;/li&gt;
+&lt;li&gt;0,5m Bündchenstoff für Ärmel und untenrum&lt;/li&gt;
+&lt;li&gt;einen Reißverschluss, ca. 70-80cm (kürzen kann man immer noch), ggf. als Wendereißverschluss (bekommt man auf eBay etc. günstig)&lt;/li&gt;
+&lt;/ul&gt;
+
+…und für die Katzen-, Drachen- und Pony-Freunde: wenn ihr etwas mehr Stoff bestellt sowie dicken Filz (gibt’s z.B. im Bastelzubehör), könnt ihr an den Hoodie auch plastische Ohren, Flügel, Mähnen, Schwänze, Pfoten, Stacheln usw. dran machen
+
+Mehr Infos &lt;a href=&quot;http://nerdine.org/zenphoto/Wendehoodie/&quot;&gt;hier&lt;/a&gt;.",
                     "persons": [
                         {"id": "3921",  "full_public_name": "jiska"}
                     ],
                     "links": [
-                    ]
-                  },
-                  {
-                    "id": "5202",
-                    "start": "20:23",
-                    "duration": "02:00",
-                    "room": "Gate 105 (Workshop Airlines)",
-                    "slug": "gate_105_workshop_airlines_-_2013-09-07_20:23_-_hacklace_lotworkshop_-_muzy_-_5202",
-                    "title": "Hacklace Lötworkshop",
-                    "subtitle": "Wir löten ein blinkendes Schmuckstück",
-                    "track": "",
-                    "type": "workshop",
-                    "language": "de",
-                    "abstract": "Mit dem Hacklace bastelst du dir dein eigenes blinkendes Schmuckstück und lernst dabei spielend einfach Löten. Fertig zusammengebaut kannst du es wie eine Halskette tragen und auf 35 Pixeln kreativ werden - mit deinen eigenen Texten und Animationen",
-                    "description": "Noch nie gelötet? Kein Problem. Mit dem Hacklace lernst du spielend einfach löten und hast am Ende ein tolles elektronisches Schmuckstück.
-
-Egal ob auf Parties und in Clubs - mit dem Hacklace setzt du ein leuchtendes Zeichen und bist ein Blickfang. Alternativ auch ein tolles unkonventionelles Geschenk mit deiner Individuellen Botschaft,
-
-Die individuelle Botschaft bekommst du ganz einfach auf dein Hacklace. Mit einem USB-&gt;TTL Adapter an deinen PC anschließen und den Animator auf http://hacklace,org herunterladen und ausführen. Mit nur wenigen Klicks hast du neue Animationen und Texte auf deinem Hacklace! :)
-
-Es fällt bei dem Workshop ein Unkostenbeitrag für 13€ (nur Hacklace) bzw 18€ (Hacklace und USB-&gt;TTL Adapter) an. Bitte bringe diesen Unkostenbeitrag passend zum Workshop mit. Lötutensilien bringen wir mit, wenn du aber mit deinem eigenem Werkzeug löten willst kannst du das natürlich gerne machen!
-
-Benötigst du keinen Workshop und möchtest für dich alleine ein Hacklace löten, kannst du einen Bausatz für den regulären Preis von 10€ erwerben (USB-&gt;TTL Adapter für 5€). 
-
-
-Note for English speakers: Even though this workshop is delivered in German we can arrange a workshop in English. Please drop me a line at  muzy [here comes the at sign] hacklace [here comes the dot] and the ORG and we will figure out a solution.",
-                    "persons": [
-                        {"id": "3878",  "full_public_name": "muzy"}
-                    ],
-                    "links": [
-                        {"url": "http://hacklace.org", "title": "Hacklace Website"}
-                    ]
-                  },
-                  {
-                    "id": "5201",
-                    "start": "22:23",
-                    "duration": "02:00",
-                    "room": "Gate 105 (Workshop Airlines)",
-                    "slug": "gate_105_workshop_airlines_-_2013-09-07_22:23_-_let_s_blink_-_muzy_-_5201",
-                    "title": "Let&#x27;s blink ",
-                    "subtitle": "SMD-Lötlern Workshop mit dem RZLblink",
-                    "track": "",
-                    "type": "workshop",
-                    "language": "de",
-                    "abstract": "",
-                    "description": "SMD löten - oft als schwierig abgetan aber eigentlich kinderleicht. In diesem Workshop lernst Du anhand des RZLblink, dass auch Du SMD löten kannst. 
-
-Der Workshop dauert in etwa zwei Stunden, Material wird bereitgestellt. Wenn du deinen eigenen Lötkolben nutzen möchtest bringe diesen ruhig mit. Für den Workshop fällt ein Unkostenbeitrag von 13€ pro Workshopteilnehmer an. Bitte finde dich fünf Minuten vor dem Workshop im Workshop-Raum ein, damit wir pünktlich starten können.
-
-Benötigst du keinen Workshop und möchtest für dich alleine ein RZLblink löten, kannst du einen Bausatz für den regulären Preis von 8€ erwerben. 
-
-
-Note for English speakers: Even though this workshop is delivered in German we can arrange a workshop in English. Please drop me a line at  muzy [here comes the at sign] hacklace [here comes the dot] and the ORG and we will figure out a solution.",
-                    "persons": [
-                        {"id": "3878",  "full_public_name": "muzy"}
-                    ],
-                    "links": [
-                        {"url": "https://wiki.raumzeitlabor.de/wiki/RZLblink", "title": "RZLblink im RaumZeitLabor Wiki"}
                     ]
                   }
               ]
@@ -913,45 +862,11 @@ Note for English speakers: Even though this workshop is delivered in German we c
                     ]
                   },
                   {
-                    "id": "5191",
+                    "id": "5173",
                     "start": "13:23",
                     "duration": "00:50",
                     "room": "Gate 104",
-                    "slug": "gate_104_-_2013-09-08_13:23_-_new_security_concepts_in_gnome_-_stef_walter_-_tobias_mueller_-_5191",
-                    "title": "New Security Concepts in GNOME",
-                    "subtitle": "More secure with less “security”",
-                    "track": "Open Source Entwicklung",
-                    "type": "lecture",
-                    "language": "en",
-                    "abstract": "The one big problem security faces is users. We interrupt users and and ask them to make informed decisions while they are trying to get things done. We must not prompt. Never. This talk shows some potential approaches and present infrastructure to make that happen.",
-                    "description": "Application developers often regret having to deal with security stuff such as certificates or encryption.
-
-This talk will show simple approaches to potentially take in GNOME to relieve app authors of so much security related complexity, while at the same time meeting user expectations of privacy.
-
-Topics include:
-
-    How to store account passwords in your configuration/settings  securely, even when your app is used in a (future) sandbox.
-    The simple but correct way to use SSL/TLS to connect securely to online services.
-    How to (not) deal with prompting the user about invalid certificates and so on.
-    Using single sign on to remove prompting for passwords.
-
-We’ll also highlight some of the infrastructure work that’s been done simplify security, such as the common storage for certificates, secret storage, authentication and so on.
-
-
-",
-                    "persons": [
-                        {"id": "4005",  "full_public_name": "Stef Walter"},
-                        {"id": "3980",  "full_public_name": "Tobias Mueller"}
-                    ],
-                    "links": [
-                    ]
-                  },
-                  {
-                    "id": "5173",
-                    "start": "14:23",
-                    "duration": "00:50",
-                    "room": "Gate 104",
-                    "slug": "gate_104_-_2013-09-08_14:23_-_proximax_telex_flashproxy_oder_tor_bridges_-_qbi_-_5173",
+                    "slug": "gate_104_-_2013-09-08_13:23_-_proximax_telex_flashproxy_oder_tor_bridges_-_qbi_-_5173",
                     "title": "Proximax, Telex, Flashproxy oder Tor Bridges",
                     "subtitle": "Übersicht über aktuelle Zensurumgehungssoftware",
                     "track": "Web und IT-Security",
@@ -965,6 +880,27 @@ Später werde ich auf das Konzept der Tor Bridges eingehen. Dies ist wichtig, de
 Der Vortrag stellt die Funktionsweise der diversen Dienste vor und erklärt, wo Stärken und Schwächen liegen. Ich würde mir erhoffen, dass der Vortrag für weitere neue Ansätze oder Verbesserungen der bestehenden Software dient.",
                     "persons": [
                         {"id": "2402",  "full_public_name": "qbi"}
+                    ],
+                    "links": [
+                    ]
+                  },
+                  {
+                    "id": "5241",
+                    "start": "14:23",
+                    "duration": "00:50",
+                    "room": "Gate 104",
+                    "slug": "gate_104_-_2013-09-08_14:23_-_statistische_fallen_steller_-_khamacher_-_5241",
+                    "title": "Statistische Fallen(steller)",
+                    "subtitle": "",
+                    "track": "Anonymität im Real Life und außerhalb des Internets",
+                    "type": "lecture",
+                    "language": "de",
+                    "abstract": "Computerspiele führen zu Amokläufen? Vorratsdatenspeicherung &amp; Co sind Werkzeuge für &quot;Precrime&quot;? Päpste sind auch nur Menschen?",
+                    "description": "Mit Statistik und daraus abgeleiteten Aussagen läßt sich viel &quot;argumentieren&quot; - auch und gerade im Bereich der Netze, Sicherheit und Überwachung.
+
+Wie wir schon durch die linguistische Analyse des Neusprechs wissen, kann man mit geschickter Sprache viel manipulieren. Dieser Talk soll komplementär dazu zeigen, welche Manipulationen bzw. welche Fehler in der (öffentlichen) Diskussion bei empirischen Daten und ihrer statistischen Auswertung gemacht werden. Es liegt dabei im Auge des Betrachters, ob die Fehler intendiert sind oder nur aus Unkenntnis gemacht werden... ",
+                    "persons": [
+                        {"id": "2333",  "full_public_name": "khamacher"}
                     ],
                     "links": [
                     ]
@@ -1060,101 +996,41 @@ Weitere Informationen zum Projekt finden sich hier: http://calc.pw/de",
                     ]
                   },
                   {
-                    "id": "5229",
+                    "id": "5191",
                     "start": "14:23",
                     "duration": "00:50",
                     "room": "Gate 111",
-                    "slug": "gate_111_-_2013-09-08_14:23_-_towards_physical_layer_sneaker_transport_post_-_nanooq_-_5229",
-                    "title": "Towards &quot;Physical Layer Sneaker Transport&quot; (POST)",
-                    "subtitle": "Using cryptology over your six-degrees-of-separation for sending and receiving physical object to your friends",
-                    "track": "Anonymität im Real Life und außerhalb des Internets",
+                    "slug": "gate_111_-_2013-09-08_14:23_-_new_security_concepts_in_gnome_-_stef_walter_-_tobias_mueller_-_5191",
+                    "title": "New Security Concepts in GNOME",
+                    "subtitle": "More secure with less “security”",
+                    "track": "Open Source Entwicklung",
                     "type": "lecture",
                     "language": "en",
-                    "abstract": "The &quot;Physical Layer Sneaker Transport&quot; (POST)-Protocol enables you to send a present to a friend far away by using the world&#x27;s &quot;six-degrees-of-separation&quot;. That&#x27;s right, unpaid people you don&#x27;t know will not steal your present, but deliver it for you: For fun and a better world. How to trust and trace in such an &quot;Ad-hoc Co-presence Aware Bi-work&quot; (ACAB, working title)? This ad-hoc network of two mobile computers (bi-work is a network of two) established for the brief moment when one carrier of your packet identifies the next best carrier closer to your friend, authenticates him, hands the packet over and generates a tracing receipt, is right every hacker&#x27;s dilemma:
-How to identify and trust persons in an ephemeral distributed network in order to do cool stuff together instead of being screwed over?",
-                    "description": "In 2011 &lt;q href=&quot;http://larsipulami.de&quot;&gt;Inj4n&lt;/a&gt; outlined the opportunities of a &quot;Physical Objects Sneaker Transport&quot;-protocol in his academic paper &quot;Evolving Logistics: Physical-Objects Sneaker Transport (POST)&quot;. Subsequent workshops led to his talk &quot;Movement in the other real space — Location based Applications and the spatio-temporal Identity&quot; on the MRMCD 2012. One year later a four-headed &lt;a href=&quot;http://www.wiwi.uni-siegen.de/itsec/lehre/ws-1314/ws13-post-project/index.html?lang=de&quot;&gt;research group&lt;/a&gt; of hackers and computer scientist prototype the environment of this earthling-based transport protocol. 
+                    "abstract": "The one big problem security faces is users. We interrupt users and and ask them to make informed decisions while they are trying to get things done. We must not prompt. Never. This talk shows some potential approaches and present infrastructure to make that happen.",
+                    "description": "Application developers often regret having to deal with security stuff such as certificates or encryption.
 
-In a* diploma thesis there is research about identification and authentication parameters needed between two people to establish trust and trace transported physical objects from sender to recipient. While PGP signing might be used for tracing the path of a packet, the underlying trust model seems to point into the known reputation-based social network dilemma: Trust and recognizion seem to be only possible using memorized identification attributes. These attributes are at the same time the fabric the dreams of the governmental intelligences&#x27;, economic marketings&#x27; and surveillance in general are made of. 
+This talk will show simple approaches to potentially take in GNOME to relieve app authors of so much security related complexity, while at the same time meeting user expectations of privacy.
 
-While the old-skool of encryption, IT security and cryptology is known to most of the MRMCD2013 audience (PGP, asymmetric signing and encryption, zero-knowledge proofs and the like), direct anonymity assertion (e.g. IDEMIX) might not. Adding to this a list of interesting findings from the fields of evolution biology, anthropology, human behaviour and game theory there might be indeed a &quot;game&quot; of exchanging, sharing and giving away of stuff in anon- and pseudonymity and building up reputation in a distributed off- and online social network.
+Topics include:
 
-This presentation will elaborate shortly on these building blocks, put them together to outline the identification and anonymity protocol in POST and show (screen shots at the least) actual implementation of prototypes.
+    How to store account passwords in your configuration/settings  securely, even when your app is used in a (future) sandbox.
+    The simple but correct way to use SSL/TLS to connect securely to online services.
+    How to (not) deal with prompting the user about invalid certificates and so on.
+    Using single sign on to remove prompting for passwords.
 
-Information concerning setting up a stable or resilient social environment of reciprocal altruism would be awesome: nanooq AT hasi DOT it
-&lt;hl&gt;
+We’ll also highlight some of the infrastructure work that’s been done simplify security, such as the common storage for certificates, secret storage, authentication and so on.
 
-* my
 
-Note:
-Since &quot;das ist Deutschland hier!&quot; the talk could also be held in German. And in French.",
+",
                     "persons": [
-                        {"id": "4014",  "full_public_name": "Nanooq"}
+                        {"id": "4005",  "full_public_name": "Stef Walter"},
+                        {"id": "3980",  "full_public_name": "Tobias Mueller"}
                     ],
                     "links": [
-                        {"url": "http://larsipulami.de/papers/fischer_gi2011_post.pdf", "title": "Evolving Logistics: Physical-Objects Sneaker Transport (POST)"},
-                        {"url": "http://larsipulami.de/presentation/2011-agrn-post.pdf", "title": "Evolving Logistics: Physical-Objects Sneaker Transport, Invitation of University Bremen, Faculty 3 - Mathematics/Computer Science, AG Rechnernetze, November 2011"},
-                        {"url": "http://www.wiwi.uni-siegen.de/itsec/lehre/ws-1314/ws13-post-project/index.html?lang=de", "title": "Projekt Physical Objects Sneaker Transport (POST)"}
                     ]
                   }
               ],
               "Gate 105 (Workshop Airlines)": [
-                  {
-                    "id": "5204",
-                    "start": "11:23",
-                    "duration": "01:50",
-                    "room": "Gate 105 (Workshop Airlines)",
-                    "slug": "gate_105_workshop_airlines_-_2013-09-08_11:23_-_lets_blink_-_muzy_-_5204",
-                    "title": "Lets blink",
-                    "subtitle": "SMD-Lötlern Workshop mit dem RZLblink",
-                    "track": "",
-                    "type": "workshop",
-                    "language": "de",
-                    "abstract": "",
-                    "description": "SMD löten - oft als schwierig abgetan aber eigentlich kinderleicht. In diesem Workshop lernst Du anhand des RZLblink, dass auch Du SMD löten kannst. 
-
-Der Workshop dauert in etwa zwei Stunden, Material wird bereitgestellt. Wenn du deinen eigenen Lötkolben nutzen möchtest bringe diesen ruhig mit. Für den Workshop fällt ein Unkostenbeitrag von 13€ pro Workshopteilnehmer an. Bitte finde dich fünf Minuten vor dem Workshop im Workshop-Raum ein, damit wir pünktlich starten können.
-
-Benötigst du keinen Workshop und möchtest für dich alleine ein RZLblink löten, kannst du einen Bausatz für den regulären Preis von 8€ erwerben. 
-
-
-Note for English speakers: Even though this workshop is delivered in German we can arrange a workshop in English. Please drop me a line at  muzy [here comes the at sign] hacklace [here comes the dot] and the ORG and we will figure out a solution.",
-                    "persons": [
-                        {"id": "3878",  "full_public_name": "muzy"}
-                    ],
-                    "links": [
-                        {"url": "https://wiki.raumzeitlabor.de/wiki/RZLblink", "title": "RZLblink im RaumZeitLabor Wiki"}
-                    ]
-                  },
-                  {
-                    "id": "5205",
-                    "start": "13:23",
-                    "duration": "02:00",
-                    "room": "Gate 105 (Workshop Airlines)",
-                    "slug": "gate_105_workshop_airlines_-_2013-09-08_13:23_-_hacklace_lotworkshop_-_muzy_-_5205",
-                    "title": "Hacklace Lötworkshop",
-                    "subtitle": "Wir löten ein blinkendes Schmuckstück",
-                    "track": "",
-                    "type": "workshop",
-                    "language": "de",
-                    "abstract": "Mit dem Hacklace bastelst du dir dein eigenes blinkendes Schmuckstück und lernst dabei spielend einfach Löten. Fertig zusammengebaut kannst du es wie eine Halskette tragen und auf 35 Pixeln kreativ werden - mit deinen eigenen Texten und Animationen",
-                    "description": "Noch nie gelötet? Kein Problem. Mit dem Hacklace lernst du spielend einfach löten und hast am Ende ein tolles elektronisches Schmuckstück.
-
-Egal ob auf Parties und in Clubs - mit dem Hacklace setzt du ein leuchtendes Zeichen und bist ein Blickfang. Alternativ auch ein tolles unkonventionelles Geschenk mit deiner Individuellen Botschaft,
-
-Die individuelle Botschaft bekommst du ganz einfach auf dein Hacklace. Mit einem USB-&gt;TTL Adapter an deinen PC anschließen und den Animator auf http://hacklace,org herunterladen und ausführen. Mit nur wenigen Klicks hast du neue Animationen und Texte auf deinem Hacklace! :)
-
-Es fällt bei dem Workshop ein Unkostenbeitrag für 13€ (nur Hacklace) bzw 18€ (Hacklace und USB-&gt;TTL Adapter) an. Bitte bringe diesen Unkostenbeitrag passend zum Workshop mit. Lötutensilien bringen wir mit, wenn du aber mit deinem eigenem Werkzeug löten willst kannst du das natürlich gerne machen!
-
-Benötigst du keinen Workshop und möchtest für dich alleine ein Hacklace löten, kannst du einen Bausatz für den regulären Preis von 10€ erwerben (USB-&gt;TTL Adapter für 5€). 
-
-Note for English speakers: Even though this workshop is delivered in German we can arrange a workshop in English. Please drop me a line at  muzy [here comes the at sign] hacklace [here comes the dot] and the ORG and we will figure out a solution.",
-                    "persons": [
-                        {"id": "3878",  "full_public_name": "muzy"}
-                    ],
-                    "links": [
-                        {"url": "http://hacklace.org", "title": "Hacklace Website"}
-                    ]
-                  }
               ]
             }
           }

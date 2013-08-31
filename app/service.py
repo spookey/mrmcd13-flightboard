@@ -7,7 +7,7 @@ from config import *
 from jsonhandler import get_json
 from loghandler import logger
 from HTMLParser import HTMLParser
-from re import findall
+from textwrap import wrap, fill
 
 def datetime_from_date(Ymd):
     return datetime.strptime(Ymd, '%Y-%m-%d')
@@ -24,7 +24,6 @@ def format_time(datetimeobj):
 def datetime_now():
     # return datetime.now()
     return datetime.strptime('2013-09-07 13:37', '%Y-%m-%d %H:%M') #testing, uncomment for production!
-
 
 def current_day_number():
     json = get_json()
@@ -52,14 +51,10 @@ def date_display():
 
 def schedule():
     def _strconv(msg):
-        for e in findall('&.+?;', msg):
+        for e in re.findall('&.+?;', msg):
             unescaped = HTMLParser().unescape(e)
             msg = msg.replace(e, unescaped)
         return msg
-
-    def _strsplit(msg, num=fb_daparture_length):
-        result = _strconv(msg)
-        return [result[start:start+num].lstrip().rstrip() for start in range(0, len(result), num)]
 
     json = get_json()
     today = current_day_number()
@@ -73,27 +68,41 @@ def schedule():
                 for event in rooms:
                     if datetime_from_time(event['start']) >= datetime_from_time(format_time(datetime_now())):
 
-                        messages = []
-                        if not event['subtitle']:
-                            messages = _strsplit(event['title'], fb_daparture_length)
-                        else:
-                            messages = _strsplit(event['title'], fb_daparture_length) + _strsplit(event['subtitle'], fb_daparture_length)
+                        time = [event['start'].rjust(fb_time_length)]
+                        tdiff = datetime_from_time(event['start']) - datetime_from_time(format_time(datetime_now()))
+                        if tdiff <= timedelta(minutes=15):
+                            time.append('Boarding'.rjust(fb_time_length))
+                        elif tdiff <= timedelta(hours=1):
+                            minutedelta = '~ %02d Min' %(tdiff.seconds / 60)
+                            time.append(minutedelta.rjust(fb_time_length))
+
+                        depature = wrap(_strconv(event['title'].strip()), fb_daparture_length)
+                        if event['subtitle']:
+                            depature += wrap(_strconv(event['subtitle'].strip()), fb_daparture_length)
+
+                        flight = [event['id']]
+                        if event['language']:
+                            flight.append(event['language'].rjust(fb_flight_length))
+
+                        gate = [event['room'].rjust(fb_gate_length)]
+                        if '111' in event['room']:
+                            gate.append('Workshop'.rjust(fb_gate_length))
 
                         result.append({
                             'time': {
-                                'messages': [event['start']],
+                                'messages': time,
                                 'maxLength': fb_time_length,
                             },
                             'depature': {
-                                'messages': messages,
+                                'messages': depature,
                                 'maxLength': fb_daparture_length,
                             },
                             'flight': {
-                                'messages': [event['id']],
+                                'messages': flight,
                                 'maxLength': fb_flight_length,
                             },
                             'gate': {
-                                'messages': [event['room']],
+                                'messages': gate,
                                 'maxLength': fb_gate_length,
                             },
                         })
