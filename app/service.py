@@ -70,40 +70,40 @@ def schedule():
 
                         time = [event['start'].rjust(fb_time_length)]
                         tdiff = datetime_from_time(event['start']) - datetime_from_time(format_time(datetime_now()))
-                        if tdiff <= timedelta(minutes=15):
+                        if tdiff <= timedelta(minutes=boarding_time):
                             time.append('Boarding'.rjust(fb_time_length))
                         elif tdiff <= timedelta(hours=1):
-                            minutedelta = '~ %02d Min' %(tdiff.seconds / 60)
+                            minutedelta = '%02d Min' %(tdiff.seconds / 60)
                             time.append(minutedelta.rjust(fb_time_length))
 
-                        depature = wrap(_strconv(event['title'].strip()), fb_daparture_length)
-                        if event['subtitle']:
-                            depature += wrap(_strconv(event['subtitle'].strip()), fb_daparture_length)
+                        gate = [event['room'].rjust(fb_gate_length)]
+                        if '111' in event['room']:
+                            gate.append('Workshop'.rjust(fb_gate_length))
 
                         flight = [event['id']]
                         if event['language']:
                             flight.append(event['language'].rjust(fb_flight_length))
 
-                        gate = [event['room'].rjust(fb_gate_length)]
-                        if '111' in event['room']:
-                            gate.append('Workshop'.rjust(fb_gate_length))
+                        depature = wrap(_strconv(event['title'].strip()), fb_daparture_length)
+                        if event['subtitle']:
+                            depature += wrap(_strconv(event['subtitle'].strip()), fb_daparture_length)
 
                         result.append({
                             'time': {
                                 'messages': time,
                                 'maxLength': fb_time_length,
                             },
-                            'depature': {
-                                'messages': depature,
-                                'maxLength': fb_daparture_length,
+                            'gate': {
+                                'messages': gate,
+                                'maxLength': fb_gate_length,
                             },
                             'flight': {
                                 'messages': flight,
                                 'maxLength': fb_flight_length,
                             },
-                            'gate': {
-                                'messages': gate,
-                                'maxLength': fb_gate_length,
+                            'depature': {
+                                'messages': depature,
+                                'maxLength': fb_daparture_length,
                             },
                         })
 

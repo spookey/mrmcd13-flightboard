@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 
-{% if rows is defined and maxrows is defined and rowupdate is defined %}
+{% if rows is defined and maxrows is defined and rowupdate is defined and jsonreload is defined %}
     {% if rows <= maxrows %}
         {% set maxrows = rows %}
     {% endif %}
@@ -9,7 +9,7 @@
 
 <script type="text/javascript">
 
-    function getjson(row, element) {
+    function loadjson(row, element) {
         var result = null;
         $.ajax({
             'async': false,
@@ -21,16 +21,20 @@
         return result[row][element];
     };
 
-    $.flightboard.setDefaults( getjson('defaults', 'defaults') );
+    $.flightboard.setDefaults( loadjson('defaults', 'defaults') );
 
     {% for number in range(maxrows) %}
-        $(function () { $('#time{{ number }}').flightboard( getjson('row{{ number }}', 'time') ); });
-        $(function () { $('#gate{{ number }}').flightboard( getjson('row{{ number }}', 'gate') ); });
-        $(function () { $('#flight{{ number }}').flightboard( getjson('row{{ number }}', 'flight') ); });
-        $(function () { $('#depature{{ number }}').flightboard( getjson('row{{ number }}', 'depature') ); });
+        $(function () { $('#time{{ number }}').flightboard( loadjson('row{{ number }}', 'time') ); });
+        setInterval( function () { $('#time{{ number }}').flightboard( loadjson('row{{ number }}', 'time') ); }, {{ jsonreload }});
+        $(function () { $('#gate{{ number }}').flightboard( loadjson('row{{ number }}', 'gate') ); });
+        setInterval( function () { $('#gate{{ number }}').flightboard( loadjson('row{{ number }}', 'gate') ); }, {{ jsonreload }});
+        $(function () { $('#flight{{ number }}').flightboard( loadjson('row{{ number }}', 'flight') ); });
+        setInterval( function () { $('#flight{{ number }}').flightboard( loadjson('row{{ number }}', 'flight') ); }, {{ jsonreload }});
+        $(function () { $('#depature{{ number }}').flightboard( loadjson('row{{ number }}', 'depature') ); })
+        setInterval( function () { $('#depature{{ number }}').flightboard( loadjson('row{{ number }}', 'depature') ); }, {{ jsonreload }});
     {% endfor %}
 
-    function refreshing(upto){
+    function rowrefresh(upto){
         var nr = 0;
         setInterval(function()
         {
@@ -40,7 +44,7 @@
             $(function () { $('#depature' + nr).flightboard('flip', 'next'); });
 
             nr++;
-            if(nr >= upto){ nr = 0; }
+            if(nr >= upto) { nr = 0; }
         }, {{ rowupdate }});
     };
 
@@ -68,7 +72,7 @@
 </table>
 
 <script type="text/javascript">
-    refreshing({{maxrows}});
+    rowrefresh({{maxrows}});
 </script>
 
 {% endif %}
