@@ -22,8 +22,8 @@ def format_time(datetimeobj):
     return datetime.strftime(datetimeobj, '%H:%M')
 
 def datetime_now():
-    # return datetime.now()
-    return datetime.strptime('2013-09-07 13:37', '%Y-%m-%d %H:%M') #testing, uncomment for production!
+    return datetime.now()
+    # return datetime.strptime('2013-09-07 13:37', '%Y-%m-%d %H:%M') #testing, uncomment for production!
 
 def current_day_number():
     json = get_json()
