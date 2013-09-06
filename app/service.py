@@ -77,7 +77,7 @@ def schedule():
                             time.append(minutedelta.rjust(fb_time_length))
 
                         gate = [event['room'].rjust(fb_gate_length)]
-                        if '111' in event['room']:
+                        if '105' in event['room']:
                             gate.append('Workshop'.rjust(fb_gate_length))
 
                         flight = [event['id']]
