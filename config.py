@@ -20,6 +20,7 @@ flightboard_defaults = os.path.join(basedir, 'app/flightboard_defaults.json')
 fb_maxrows = 16
 fb_rowupdate = 3000
 fb_json_reload = 60000
+fb_pagerefresh = 23000
 
 # flightboard character width
 fb_time_length = 8

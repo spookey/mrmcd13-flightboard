@@ -22,6 +22,7 @@ def index():
         maxrows = fb_maxrows,
         rowupdate = fb_rowupdate,
         jsonreload = fb_json_reload,
+        pagerefresh = fb_pagerefresh,
     )
 
 @app.route('/content')

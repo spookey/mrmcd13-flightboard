@@ -6,4 +6,7 @@
     {% if message is defined %}<p>{{ message }}</p>{% endif %}
     <a href="{{url_for('index')}}">Home</a>
 </div>
+    <script type="text/javascript">
+        window.onload=setTimeout('window.location.reload();', 2300);
+    </script>
 {% endblock %}
