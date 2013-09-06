@@ -1,0 +1,30 @@
+{
+    "gate": {
+        "messages": [
+            "xxxxxxxx",
+            "--------"
+        ],
+        "maxLength": 8
+    },
+    "flight": {
+        "messages": [
+            "xxxx",
+            "----"
+        ],
+        "maxLength": 4
+    },
+    "depature": {
+        "messages": [
+            "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "------------------------------"
+        ],
+        "maxLength": 30
+    },
+    "time": {
+        "messages": [
+            "xxxxxxxx",
+            "--------"
+        ],
+        "maxLength": 8
+    }
+}

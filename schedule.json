@@ -43,7 +43,7 @@
                     "type": "lecture",
                     "language": "de",
                     "abstract": "",
-                    "description": "",
+                    "description": "Nicht erst der Überwachungsskandal rund um PRISM und Tempora zeigt, dass es mehr als genug Techniker zu geben scheint, die bereit sind, am Aufbau dieser Strukturen mitzuwirken - teilweise aus finanziellen Gründen, teilweise weil sie nicht überblicken, wozu ihre Arbeit benutzt wird (z.B. weil sie sich mit nur mit Teilaspekten beschäftigen). Die Keynote beleuchtet wenig akademisch die ganz konkreten Fragen, die sich daraus ergeben. ",
                     "persons": [
                         {"id": "1588",  "full_public_name": "fukami"}
                     ],
@@ -121,7 +121,11 @@ What will attendees gain from the presentation?
                         {"id": "2633",  "full_public_name": "mo"}
                     ],
                     "links": [
-                        {"url": "https://www.torservers.net/", "title": "Torservers.net"}
+                        {"url": "https://www.torservers.net/", "title": "Torservers.net"},
+                        {"url": "https://maps.google.com/maps?q=http://www.torservers.net/misc/tormap/tormap.20130906.1MB.kml", "title": "Google Maps: Tor Exits &gt;1MB/s"},
+                        {"url": "https://maps.google.com/maps?q=http://www.torservers.net/misc/tormap/tormap.20130906.10MB.kml", "title": "Google Maps: Tor Exits &gt;10MB/s"},
+                        {"url": "https://compass.torproject.org/", "title": "Tor Relay Compass"},
+                        {"url": "https://metrics.torproject.org/", "title": "Tor Metrics"}
                     ]
                   }
               ],
@@ -351,7 +355,7 @@ http://mrmcd.net/wiki/kurzstreckenfluege_a.k.a_lightning_talks",
                     "subtitle": "In 48 Stunden zum fertigen Spiel",
                     "track": "",
                     "type": "lecture",
-                    "language": "",
+                    "language": "de",
                     "abstract": "
 3 Mal im Jahr entwickeln Programmierer weltweit in nur 48 Stunden über 2000 Spiele zu einem vorgegebenen Thema. Wieso sollte man bei so einem Event mitmachen und wie schafft man es in der kurzen Zeit ein gutes Spiel zu entwickeln? ",
                     "description": "",
@@ -847,13 +851,15 @@ Mehr Infos &lt;a href=&quot;http://nerdine.org/zenphoto/Wendehoodie/&quot;&gt;hi
                     "room": "Gate 104",
                     "slug": "gate_104_-_2013-09-08_12:23_-_frab_-_mm_-_5168",
                     "title": "frab",
-                    "subtitle": "conference hacking",
+                    "subtitle": "conference schedule management",
                     "track": "Open Source Entwicklung",
                     "type": "lecture",
                     "language": "de",
-                    "abstract": "Mein Leben mit frab: Rückblicke, Ausblicke.",
-                    "description": "
-",
+                    "abstract": "frab wird auf verschiedenen chaos und chaosnahen Veranstaltungen genutzt um das Programm zu erstellen.
+
+Der Vortrag geht auf die Verwendung und Entwicklung von frab ein. Zum Schluss wird die Club-weite Infrastruktur vorgestellt.",
+                    "description": "Wie man frab benutzt um eine Veranstaltung zu planen, aber auch wie der derzeitige Entwicklungsstand ist. Welche Features sind geplant? Wie installiere ich frab? Welche Fehler gab es in der Vergangenheit. 
+Was macht das CCC weite Frab und wie geht es mit der Integration von VOC und media weiter? ",
                     "persons": [
                         {"id": "1834",  "full_public_name": "mm"}
                     ],

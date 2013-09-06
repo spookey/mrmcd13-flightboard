@@ -1,7 +1,7 @@
 # -.- coding: utf-8 -.-
 
 from flask import render_template, send_from_directory, flash, jsonify
-from config import dir_static, fb_maxrows
+from config import dir_static, fb_maxrows, no_talks
 from loghandler import logger
 from jsonhandler import load_local
 from service import *
@@ -16,9 +16,14 @@ app.jinja_env.globals.update(servicefunctions = servicefunctions)
 @app.route('/index')
 def index():
     blocklog('index requested')
+    rows = len(schedule())
+    print 'r', rows
+    if rows == 0:
+        rows += 1;
+        print 'rows', rows
     return render_template('main.html',
         title = 'Up Next',
-        rows = len(schedule()),
+        rows = rows,
         maxrows = fb_maxrows,
         rowupdate = fb_rowupdate,
         jsonreload = fb_json_reload,
@@ -32,6 +37,9 @@ def content():
     data['defaults'] = load_local(flightboard_defaults)
     for i, item in enumerate(schedule()):
         data['row%d' %(i)] = item
+    if len(data) == 1:
+        data['row0'] = load_local(no_talks)
+
     return jsonify(data)
 
 @app.route('/favicon.ico')
