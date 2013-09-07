@@ -17,7 +17,6 @@ logfile = os.path.join(basedir, 'up_next.log')
 
 # flightboard configuration
 flightboard_defaults = os.path.join(basedir, 'app/flightboard_defaults.json')
-no_talks = os.path.join(basedir, 'app/no_talks.json')
 fb_maxrows = 16
 fb_rowupdate = 3000
 fb_json_reload = 60000

@@ -106,7 +106,26 @@ def schedule():
                                 'maxLength': fb_daparture_length,
                             },
                         })
-
+            if len(result) == 0:
+                logger.info('no talks for today')
+                result.append({
+                    'time': {
+                            'messages': ['x' * fb_time_length, '-' * fb_time_length],
+                            'maxLength': fb_time_length,
+                        },
+                        'gate': {
+                            'messages': ['x' * fb_gate_length, '-' * fb_gate_length],
+                            'maxLength': fb_gate_length,
+                        },
+                        'flight': {
+                            'messages': ['x' * fb_flight_length, '-' * fb_flight_length],
+                            'maxLength': fb_flight_length,
+                        },
+                        'depature': {
+                            'messages': ['x' * fb_daparture_length, '-' * fb_daparture_length],
+                            'maxLength': fb_daparture_length,
+                        },
+                    })
             result.sort(key=lambda x: x['time']['messages'])
             logger.info('schedule ready ~ got %s entries' %(len(result)))
     return result

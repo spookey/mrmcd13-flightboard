@@ -432,18 +432,18 @@ Schwerpunkt des Vortrags ist ein Überblick über den aktuellen Stand von Open D
                     "room": "Gate 104",
                     "slug": "gate_104_-_2013-09-07_17:23_-_gp_gp_-_nuit_-_5182",
                     "title": "GP = GP",
-                    "subtitle": "Die Jagd nach Pixel",
+                    "subtitle": "Maenner, die auf Pixel starren",
                     "track": "",
                     "type": "lecture",
                     "language": "de",
                     "abstract": "Software und Hardware Einsatz bei Panoramen, die 50 GP ueberschreiten.",
                     "description": "Am 6.3 entstand aus einem kleinen Test eines Panoramakopfes ein 4GP Bild. Seitdem sind wir auf der Suche nach noch mehr Pixeln.
 
-Im Juli hatten wir endlich das erforderliche Wetter um unser 300mm Objektiv voll auszunutzen. Doch erreichten wir damit eine Bildgroesse zu der unsere Software und Hardware nur &quot;aeeehm, nope&quot; sagte. 
+Im Juli hatten wir endlich das erforderliche Wetter um unser 300mm Objektiv voll auszunutzen, doch erreichten wir damit eine Bildgroesse zu der unsere Software und Hardware nur &quot;aeeehm, nope&quot; sagte. 
 
-Rewrites aller Skripte und verbesserte Hardware musste her und vorallem eine Moeglichkeit Bilder vor dem eigentlichen Tiling und nach der Nachbearbeitung anzuschauen.
+Rewrites aller Skripte und verbesserte Hardware musste her, zudem eine Moeglichkeit Bilder vor dem eigentlichen Tiling und nach der Nachbearbeitung anzuschauen.
  
-In dem Vortrag soll es um den Aufwand hinter einem Panorama gehen. Mit welcher Hardware wir gegen Waende liefen und an was man in der Nachbearbeitung nicht denken sollte.
+In dem Vortrag soll es um den Aufwand hinter einem Panorama gehen. Mit welcher Hardware wir gegen Waende liefen und an was man in der Nachbearbeitung denken sollte.
 ",
                     "persons": [
                         {"id": "3458",  "full_public_name": "nuit"}
