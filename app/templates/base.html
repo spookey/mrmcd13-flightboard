@@ -31,13 +31,21 @@
 
     <header>
 
-        <img src="static/img/mrmcd13_logo.png" alt="Papierflieger MRMCD2013 SECURITY ADVICE">
+        <img src="{{ url_for('static', filename='img/mrmcd13_logo.png') }}" alt="Papierflieger MRMCD2013 SECURITY ADVICE">
+        {% if rows is defined and maxrows is defined %}
         <div id="timebox">
             <span id="clock">23:42</span>
             {% if servicefunctions.date_display is defined %}
                 <div id="day">{{ servicefunctions.date_display|safe }}</div>
             {% endif %}
         </div>
+        {% endif %}
+        {% if roll is defined %}
+        <div id="timebox">
+            <span id="rollclock">{{ roll.id }}</span>
+            <div id="day">Day {{ roll.day }} &mdash; {{ roll.time }}</div>
+        </div>
+        {% endif %}
 
         {% with messages = get_flashed_messages() %}
             {% if messages %}
@@ -52,7 +60,7 @@
     {% block content %}{% endblock %}
 
     <footer>
-        MRMCD 2013 | Flightboard &copy; Eris Diskordia | CCCMZ.
+        MRMCD2013 | Flightboard &copy; Eris Diskordia | CCCMZ.
     </footer>
 
 </body>

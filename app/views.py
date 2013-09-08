@@ -34,6 +34,14 @@ def content():
         data['row%d' %(i)] = item
     return jsonify(data)
 
+@app.route('/roll/<day>/<talk>/')
+def roll(day, talk):
+    data = preroll(day, talk)
+    return render_template('roll.html',
+        title = '- ' + data['id'],
+        roll = data,
+        )
+
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(dir_static, 'favicon.png',

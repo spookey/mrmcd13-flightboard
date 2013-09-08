@@ -520,20 +520,20 @@ Diskussion/ Fragen",
                     ]
                   },
                   {
-                    "id": "5151",
+                    "id": "5282",
                     "start": "21:23",
                     "duration": "00:50",
                     "room": "Gate 104",
-                    "slug": "gate_104_-_2013-09-07_21:23_-_drohnendebatte_-_frank_-_5151",
-                    "title": "Drohnendebatte",
+                    "slug": "gate_104_-_2013-09-07_21:23_-_tor_nutzer_und_betreibertreffen_-_mo_-_5282",
+                    "title": "Tor: Nutzer und Betreibertreffen",
                     "subtitle": "",
-                    "track": "Quadrokopter / Dronen",
-                    "type": "lecture",
-                    "language": "de",
-                    "abstract": "",
+                    "track": "Web und IT-Security",
+                    "type": "meeting",
+                    "language": "",
+                    "abstract": "Treffen für Tor-Freunde und -Liebhaber, oder einfach die die noch Fragen haben.",
                     "description": "",
                     "persons": [
-                        {"id": "1633",  "full_public_name": "frank"}
+                        {"id": "2633",  "full_public_name": "mo"}
                     ],
                     "links": [
                     ]

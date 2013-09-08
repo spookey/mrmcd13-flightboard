@@ -49,13 +49,41 @@ def date_display():
         logger.info('no conference')
         return 'No conference &mdash; %s' %(format_date(datetime.now()))
 
-def schedule():
-    def _strconv(msg):
-        for e in re.findall('&.+?;', msg):
-            unescaped = HTMLParser().unescape(e)
-            msg = msg.replace(e, unescaped)
-        return msg
+def _strconv(msg):
+    for e in re.findall('&.+?;', msg):
+        unescaped = HTMLParser().unescape(e)
+        msg = msg.replace(e, unescaped)
+    return msg
 
+def preroll(day, talk):
+    json = get_json()
+    temp = []
+    result = []
+
+    if json is not None:
+        content = json['schedule']['conference']['days'][int(day)]['rooms']
+
+        for rooms in content.itervalues():
+            for event in rooms:
+                temp.append(event)
+
+        t = temp[int(talk)]
+        speakers = ''
+        for s in t['persons']:
+            speakers += _strconv(s['full_public_name']) + ' '
+        result = {
+            'id': t['id'],
+            'title': _strconv(t['title']),
+            'subtitle': _strconv(t['subtitle']),
+            'track': _strconv(t['track']),
+            'speakers': speakers,
+            'day': day,
+            'time': t['start'],
+            }
+
+        return result
+
+def schedule():
     json = get_json()
     today = current_day_number()
     result = []

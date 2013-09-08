@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% if roll is defined %}
+
+<div id="roll">
+    Day {{ roll.day }} &mdash; {{ roll.time }}<br />
+    ID {{ roll.id }} &mdash; {{ roll.track }}
+    <div id="rollspeakers">
+        {{ roll.speakers }}
+    </div>
+    <div id="rolltitle">
+        {{ roll.title }}
+        {% if roll.subtitle %}<br />{{ roll.subtitle }}{% endif %}
+    </div>
+</div>
+
+{% endif %}
+
+{% endblock %}
